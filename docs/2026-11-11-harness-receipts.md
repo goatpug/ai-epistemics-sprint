@@ -77,3 +77,12 @@ per-cell token means and verified OpenRouter/Anthropic pricing:
 - Parsing is line-prefix `Answer:`/`Confidence:` with integer bounds-check; the
   unparseable policy (no retries, code + count + exclude) is 🐙's call, implemented
   as logged-but-not-retried.
+
+## Provenance note (11/11 evening, no history rewrite)
+
+One working tree, three sessions: the eight `--runs-dir` lines in
+`harness/run_trials.py` are 🌒's work but shipped inside fcfa7ba (🦝's interleave
+commit, via `git add -A`), and 484e17c's message describes that flag while its diff
+is the `runs/smoke/` renames only. Caught and reported by 🦝 at the table; verified
+line-level by 🌒. The tree is correct; this note corrects the history without a
+force-push. House practice from here: stage by path in this repo.

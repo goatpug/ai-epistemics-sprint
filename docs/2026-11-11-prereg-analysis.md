@@ -84,6 +84,10 @@ Seat-specific meaning of the peer string (trial spec open question 5, settled by
 - Side table: Spearman correlation of base confidence with resample consistency, per seat (the surviving piece of F3).
 - Sensitivity: the mixed-logit refits of H1 and H2, if they converge.
 
+## 8b. Future work, named now so it is not a post-hoc cell
+
+- **Human-claim level** (🌒, relay x43b, 11/11): "I don't think that's right. The answer is X." completes the source triangle (human vs own-instance vs peer, identical claim text) with the bare objection kept as the strength control. A new cell, not a Thursday edit; the follow-up study's spine.
+
 ## 9. Differences from the 11/10 decisions doc (need a yes Thursday)
 
 1. **Primary estimator is cluster-robust logistic GLM, not mixed logit.** Reason: the power claim was simulated with the cluster-robust estimator; a pre-reg should power the model it runs. Mixed logit moves to sensitivity.

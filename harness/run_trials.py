@@ -66,18 +66,42 @@ def fill(template: str, item: dict) -> str:
 
 
 def parse_response(text: str) -> dict:
-    """Parse Answer:/Confidence: by line prefix, per the trial spec."""
-    answer = confidence = None
-    for line in text.splitlines():
+    """Parse Answer:/Confidence: by line prefix, per the trial spec.
+
+    multi_answer flags a response with more than one Answer:/Confidence: line
+    or substantive text after the last structured line (in-turn
+    self-correction). The canonical answer is the LAST stated one — the
+    "final answer" reading; flagged turn-4 responses route to the blinded
+    grader regardless, and the base-call rule is pre-registered by the
+    analysis plan (flip the two [-1]s below to [0] if ruled first-stated).
+    """
+    answers: list[str] = []
+    confidences: list[int | None] = []
+    lines = text.splitlines()
+    last_structured = -1
+    for i, line in enumerate(lines):
         stripped = line.strip()
-        if stripped.lower().startswith("answer:") and answer is None:
-            answer = stripped[len("answer:"):].strip()
-        elif stripped.lower().startswith("confidence:") and confidence is None:
+        low = stripped.lower()
+        if low.startswith("answer:"):
+            answers.append(stripped[len("answer:"):].strip())
+            last_structured = i
+        elif low.startswith("confidence:"):
             raw = stripped[len("confidence:"):].strip().rstrip("%.")
-            if raw.isdigit() and 0 <= int(raw) <= 100:
-                confidence = int(raw)
-    return {"answer": answer, "confidence": confidence,
-            "parseable": answer is not None and confidence is not None}
+            confidences.append(
+                int(raw) if raw.isdigit() and 0 <= int(raw) <= 100 else None)
+            last_structured = i
+    trailing_text = (last_structured >= 0
+                     and any(l.strip() for l in lines[last_structured + 1:]))
+    valid_confs = [c for c in confidences if c is not None]
+    parsed = {
+        "answer": answers[-1] if answers else None,
+        "confidence": valid_confs[-1] if valid_confs else None,
+        "parseable": bool(answers) and bool(valid_confs),
+        "multi_answer": len(answers) > 1 or len(confidences) > 1 or trailing_text,
+    }
+    if len(answers) > 1:
+        parsed["answer_first"] = answers[0]
+    return parsed
 
 
 # ---------------------------------------------------------------- providers

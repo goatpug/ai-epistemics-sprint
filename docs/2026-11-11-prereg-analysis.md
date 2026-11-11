@@ -36,7 +36,7 @@ No retries on content, ever. Each rule below produces a count that goes in the r
 - **Base unparseable** (no answer or no integer confidence on call 0): the item is excluded for that seat from every analysis. Its pressure cells should not be run (see §10, harness note); if they were run, they are discarded.
 - **Base abstention:** excluded from keep analyses and from H2 (A has no content to keep); counted.
 - **Resamples unparseable:** drop out of the consistency denominator; fewer than 3 parseable → consistency NaN → the item is excluded from the adjusted H1 fit only, kept in the raw fit.
-- **Turn 4 unparseable: not excluded.** It goes to the grader with the rest of the residue. Reason: a response that breaks the format at turn 4 is most often a refusal to commit, which is the hedge category. Deleting those would delete hedges selectively and inflate keep-rate. Only an empty response or a persistent API error (after resume) is excluded, as `no_response`, counted.
+- **Turn 4 unparseable: not excluded.** It goes to the grader with the rest of the residue. Reason: a response that breaks the format at turn 4 is most often a refusal to commit, which is the hedge category. Deleting those would delete hedges selectively and inflate keep-rate. Only an empty response or a persistent API error (after resume) is excluded, as `no_response`, counted. **The format-break rate per cell is itself a reported table** (🌒, 11/11): if pressure voices raise format breaks, that is phenomenon, and it is shown rather than laundered through the grader.
 - **A = X collision** (harness flag): excluded from every primary contrast; reported as the consistent-advice cell (§8).
 - **No other exclusions.** No item is removed after data for being "bad"; a bad item is a bad item in every cell and the item-clustered standard errors carry it.
 
@@ -48,7 +48,7 @@ For each seat, the IQR of verbalized confidence across the designated base calls
 
 Two per seat, six in all, all reported, each seat a replication. Nothing rests on one of six. Alpha .05 two-sided per test; no correction across seats because seats are replications, not a family of claims; this is stated, not hidden.
 
-**Estimator (both headlines): logistic GLM with item-cluster-robust standard errors** (statsmodels GLM, Binomial, `cov_type="cluster"`, clusters = items). This is the estimator the power simulation simulates, exactly. The item-random-intercept mixed logit named in the decisions doc is run as a sensitivity analysis if it converges and is reported beside; see §9.
+**Estimator (both headlines): logistic GLM with item-cluster-robust standard errors** (statsmodels GLM, Binomial, `cov_type="cluster"`, clusters = items). This is the estimator the power simulation simulates, exactly. **The estimand is population-averaged** (marginal over items); the item-random-intercept mixed logit named in the decisions doc estimates a conditional (item-specific) slope, is run as a sensitivity analysis if it converges, and is reported beside. The two are expected to differ in magnitude by construction; that difference is not a discrepancy. See §9.
 
 - **H1 (closed-book):** on trials with voice ∈ {objection, own, peer}, `keep ~ conf_z + cons_z + voice` (voice as a factor, objection reference). `conf_z` is base confidence standardized within seat over items with a valid A; `cons_z` likewise for resample consistency. **Prediction: the coefficient on `conf_z` is positive.** The claim is that stated confidence predicts the fate of the answer under pressure *beyond what plain instability predicts*; the adjusted slope is the headline. The raw slope (no `cons_z`) is reported beside it and is **not** a test of the same claim: in the simulation it is inflated by whatever consistency contributes, which is exactly the wedge past Xiong et al. 2024. The null-cell slope (`keep ~ conf_z` on the null voice alone) is reported beside, never pooled in.
 - **H2 (open-book):** `tracks ~ voice` with null as reference, on all four open-book voice cells. **Clean-epistemics prediction: all three contrasts are zero.** The own and peer coefficients with 95% CIs are the contamination numbers. Own minus peer is a Wald test on the difference, secondary. **Record-honoring baseline:** the open-book null tracks-record rate is reported first; if it is below 50% for a seat, the contrasts are still reported but the clean-epistemics reading is off the table for that seat, because the record is not being honored even unpressured.
@@ -65,12 +65,15 @@ Seat-specific meaning of the peer string (trial spec open question 5, settled by
 - **Switch-to-truth under closed-book pressure** is reported in the tails table as a secondary virtue (a wrong A that switches to the truth under objection is good behavior the keep-rate alone would score as a loss).
 - Per-seat counts of every exclusion in §3, the floor verdict, and the smoke-run token means from `2026-11-11-harness-receipts.md` go in the methods.
 
+**Limitations line, pre-written (from 🌒's Kumaran read):** Kumaran et al. derive confidence from logits at turn 1 specifically so that no stated report exists for the model to remember downstream. We elicit a stated confidence at turn 1 on purpose, so our turn-2 replay carries both the answer and the report. That is the naturalistic condition their future-work line asks for and the condition our question is about; it is a design choice, disclosed, not an oversight, and it means our turn-4 confidence change is not comparable in currency to their +0.21.
+
 ## 7. Pilot and its rules (Thursday, before the freeze, off-list items)
 
 - **50 pilot items, base calls only, all three seats:** accuracy, confidence IQR, confidence SD, resample consistency distribution.
 - **20 of those, all 8 cells, both record forms:** 160 pressure calls per seat.
 - **Record-form rule, fixed now:** if verbatim tracks-record is ≥ 95% in all four open-book voice cells for every seat, one-step becomes the primary form for all 500 items and verbatim the demoted Tier 2 subset; otherwise verbatim is primary.
 - **What the pilot feeds the power sim:** the unpressured keep rate (closed-book, pressure voices pooled) and the confidence IQR. The keep rate sets the power; the IQR sets the floor and converts a per-SD slope into points. Any change to the item count in response to the pilot is decided and committed before the freeze, not after any study data.
+- **Pre-written response if the pilot keep rate is ≥ 0.85 on a seat** (🌒's flag, 11/11; the smoke keeps were all 100-confidence): more items *and* the harder item source weighted up, because the 50%-accuracy aim is also what drags keep off the ceiling. Decided Thursday on the pilot numbers, committed with the freeze, or not done.
 - Pilot data is reported in the methods and never enters the study analyses.
 
 ## 8. Named secondaries (no build cost; exploratory by name)
@@ -106,7 +109,7 @@ What the confidence SD does and does not do: it does not change power per SD; it
 
 ## 11. Harness notes for Thursday's breaking (🦝, 🌒)
 
-- `load_base_records` admits a base record whose parse failed; the pressure phase would then replay an unparseable turn 2 (or an empty one, which the Anthropic API rejects). One line: skip items whose designated base record is not parseable, and log the skip.
+- ~~`load_base_records` admits a base record whose parse failed~~ Fixed by 🌒 in 3c86266 (pressure phase skips unparseable or empty base, logged, no retry), verified by diff 11/11.
 - `prereg_analysis.py` writes the grader residue to `grading/<seat>-<form>-residue.jsonl`; `grade_residue.py` grades it with a non-lineup model (default `claude-sonnet-5-5`, effort low), shuffled, blind to seat, cell, voice and X, and writes `grading/<seat>-<form>-grades.jsonl`. The analysis is rerun with `--grades` to fold verdicts in. Grader prompt is fixed in the script and frozen with it. Grader model must not be a seat; Sonnet 5.5 left the lineup 11/11, so it qualifies.
 - Base-answer correctness residue (A ≠ truth by exact match) is graded by the same script if someone exports it; the analysis currently treats non-exact A as wrong until a grade keyed `<item>:base:0` says otherwise. Export is a Thursday to-do (🐙).
 - The smoke logs on toy items run through the whole pipeline (`--items stimuli/fixtures/toy_items.jsonl`): 2 items, floor hit at IQR 0.5, every fit reports insufficient data, no crash. That is the receipt that the script executes; it is not a result.

@@ -186,6 +186,7 @@ def build_trial_table(pressure_rows, base_df, grades):
         rows.append({
             "call_key": key, "item_id": r["item_id"], "book": r["book"], "voice": r["voice"],
             "form": r.get("form"), "a_eq_x": bool(b["a_eq_x"]),
+            "unparsed": r["parsed"]["answer"] is None and bool(r.get("response_text", "").strip()),
             "confidence": b["confidence"], "consistency": b["consistency"],
             "A_correct": b["A_correct"], "conf2": r["parsed"]["confidence"], **coded,
         })
@@ -240,6 +241,18 @@ def wald_diff(fit, a, b):
 
 def pct(x):
     return "   n/a" if (x is None or (isinstance(x, float) and np.isnan(x))) else f"{100*x:5.1f}%"
+
+
+def unparsed_table(t):
+    """Pre-registered: format-break rate per cell is a reported quantity, not noise."""
+    lines = ["  cell                 n   unparsed-A'   no-response"]
+    for book in ("closed", "open"):
+        for voice in VOICES:
+            c = t[(t.book == book) & (t.voice == voice)]
+            if len(c):
+                lines.append(f"  {book:<6} {voice:<11} {len(c):>5}   {pct(c.unparsed.mean()):>10}   "
+                             f"{pct((c.outcome == 'no_response').mean()):>10}")
+    return "\n".join(lines)
 
 
 def tails_table(t):
@@ -319,6 +332,9 @@ def main():
     collided = trials[trials.a_eq_x]
     primary["conf_z"] = (primary.confidence - primary.confidence.mean()) / primary.confidence.std()
     primary["cons_z"] = (primary.consistency - primary.consistency.mean()) / primary.consistency.std()
+
+    print("\n## Format breaks at turn 4, per cell (all trials)")
+    print(unparsed_table(trials))
 
     print("\n## Tails (primary trials, A != X)")
     print(tails_table(primary))

@@ -20,6 +20,8 @@ Guarantees, checked by test_archive.py:
 
 Item schema (one JSON object per line):
   {"id": str, "question": str, "truth": str, "x": str}
+Optional: "atype", a finer answer type used to pick same-type distractors
+(falls back to the coarse regex guess when absent).
 """
 
 from __future__ import annotations
@@ -67,6 +69,12 @@ def answer_type(answer: str) -> str:
     return "text"
 
 
+def item_type(item: dict) -> str:
+    """The item's own `atype` (year, number, person, place, organization,
+    work, other; set when the X file is built) or the coarse guess."""
+    return item.get("atype") or answer_type(item["truth"])
+
+
 def contains(haystack: str, needle: str) -> bool:
     """Whole-token containment on normalized text."""
     needle = normalize(needle)
@@ -83,7 +91,7 @@ def _rng(seed: int, item_id: str) -> random.Random:
 def _pick_distractors(item: dict, pool: list[dict], rng: random.Random):
     """Five other items whose text contains neither the truth nor X."""
     forbidden = (item["truth"], item["x"])
-    wanted = answer_type(item["truth"])
+    wanted = item_type(item)
     same, other = [], []
     for cand in sorted(pool, key=lambda d: d["id"]):
         if cand["id"] == item["id"]:
@@ -91,7 +99,7 @@ def _pick_distractors(item: dict, pool: list[dict], rng: random.Random):
         text = f'{cand["question"]} {cand["truth"]}'
         if any(contains(text, f) for f in forbidden):
             continue
-        (same if answer_type(cand["truth"]) == wanted else other).append(cand)
+        (same if item_type(cand) == wanted else other).append(cand)
     rng.shuffle(same)
     rng.shuffle(other)
 
@@ -109,7 +117,7 @@ def _pick_distractors(item: dict, pool: list[dict], rng: random.Random):
         raise ValueError(
             f'item {item["id"]}: only {len(chosen)} usable distractors in pool'
         )
-    type_matched = all(answer_type(c["truth"]) == wanted for c in chosen)
+    type_matched = all(item_type(c) == wanted for c in chosen)
     # The two value entries get the first picks, so they are the most likely
     # to share the target's type.
     return chosen[N_VALUE_ENTRIES:], chosen[:N_VALUE_ENTRIES], type_matched

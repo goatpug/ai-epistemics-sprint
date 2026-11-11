@@ -1,0 +1,860 @@
+{"id": "sqa-3342", "x": "St Lawrence", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2207", "x": "Nikolai Chernykh", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1062", "x": "2012", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0812", "x": "1954", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0599", "x": "Daniel Biss", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2282", "x": "1924", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1691", "x": "Pennsylvania Academy of the Fine Arts", "atype": "organization", "attempts": 4, "rejected": [{"x": null, "why": "unparseable", "raw": "{\"x\": \"Art Students League\", \"type\": \"organization\"}\n\nWait, Will Hicok Low did teach at the Art Students League of New York, which could make this a second valid answer. A safer choice is a different school.\n\n{\"x\": \"Pennsylvania Academy of the Fine Arts\", \"type\": \"organization\"}"}, {"x": null, "why": "unparseable", "raw": "{\"x\": \"Art Students League\", \"type\": \"organization\"}\n\nWait, Will Hicok Low did teach at the Art Students League in the 1890s, so that could be a second valid answer. A safer choice is a school he was not associated with.\n\n{\"x\": \"Pennsylvania Academy of the Fine Arts\", \"type\": \"organization\"}"}, {"x": null, "why": "unparseable", "raw": "{\"x\": \"Art Students League\", \"type\": \"organization\"}\n\nWait: Will Hicok Low did teach at the Art Students League of New York, so that could be a second valid answer. A safer choice is below.\n\n{\"x\": \"Pennsylvania Academy of the Fine Arts\", \"type\": \"organization\"}"}], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2139", "x": "Porcelain factory", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3486", "x": "1921", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0956", "x": "Gerty T. Cori", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3185", "x": "1883", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1819", "x": "Baekeland", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1885", "x": "Mathabar Singh Thapa", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2059", "x": "Donald Mackay", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0240", "x": "Vindhya Range", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2041", "x": "University of Calgary", "atype": "organization", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1701", "x": "Lance Fortnow", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3760", "x": "1914", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0720", "x": "1826", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3849", "x": "Wei Zhang", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2977", "x": "Thomen Stauch", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2816", "x": "30", "atype": "number", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2847", "x": "3", "atype": "number", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3856", "x": "Walter Gropius", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-4264", "x": "Terry Winograd", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0717", "x": "Mulliken", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0917", "x": "Water Fountain", "atype": "work", "attempts": 2, "rejected": [{"x": "1994", "why": "type year != text"}], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1506", "x": "Condemned", "atype": "work", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1333", "x": "Lidder Valley", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-4078", "x": "2010", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2577", "x": "Babu Bhai Bokhiria", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2336", "x": "Kaaga Primary School", "atype": "organization", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3827", "x": "38,000.55", "atype": "number", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2182", "x": "2019", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3975", "x": "Mount Kilimanjaro", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0174", "x": "1987", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2070", "x": "secession", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3149", "x": "4,218", "atype": "number", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2108", "x": "1946", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2490", "x": "Sally", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0909", "x": "9.12", "atype": "number", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1019", "x": "Alex Malasusa", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2086", "x": "1970", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-4133", "x": "1916", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1957", "x": "38", "atype": "number", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3973", "x": "deputy postmaster general", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1361", "x": "Rachel Green", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2691", "x": "Alison Streeter", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3147", "x": "Simone Leigh", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0271", "x": "Ebon Moss-Bachrach", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0155", "x": "Mary Lura Sherrill", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0821", "x": "Mirwaiz Yusuf Shah", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-4043", "x": "Thomas Ostermeier", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0301", "x": "1999", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2551", "x": "212", "atype": "number", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0702", "x": "London", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0764", "x": "Yuji Nakatsukasa", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2273", "x": "1975", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1550", "x": "#icebucketchallenge", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1453", "x": "2016", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1717", "x": "19", "atype": "number", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2135", "x": "192.41", "atype": "number", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3875", "x": "1702", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1846", "x": "1872", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-4080", "x": "Udhampur", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2214", "x": "Robert Brown", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1728", "x": "1953", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0828", "x": "Tangmarg", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2941", "x": "Ted Irving", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2321", "x": "Shubham Goel", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1109", "x": "1983", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0627", "x": "Peru", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0480", "x": "Pokhara University", "atype": "organization", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3219", "x": "1.78", "atype": "number", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3639", "x": "Harmony Cobel", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3928", "x": "Joe Manganiello", "atype": "person", "attempts": 3, "rejected": [{"x": null, "why": "unparseable", "raw": "{\"x\": \"Joe Lo Piccolo\", \"type\": \"person\"}\n\nWait, that resembles the correct name; use a clearly different actor instead.\n\n{\"x\": \"Chelsea Peretti\", \"type\": \"person\"}"}, {"x": null, "why": "unparseable", "raw": "{\"x\": \"Joe Lo Truglio's costar Andy Samberg\", \"type\": \"person\"}\n\nCorrection: the answer must not contain the correct answer and must be a full name only. Final:\n\n{\"x\": \"Andy Samberg\", \"type\": \"person\"}"}], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2978", "x": "2019", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3555", "x": "Lake Okeechobee", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2878", "x": "Martin of Pattishall", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3700", "x": "1991", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-4030", "x": "2008", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3409", "x": "Theme of Sand Hill", "atype": "work", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0447", "x": "Mars", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1014", "x": "Juan Bautista Alberdi", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1589", "x": "1932", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3123", "x": "Cathedral and John Connon School", "atype": "organization", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-4070", "x": "Lady Bird Johnson", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1072", "x": "Hahn", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0808", "x": "Seth Milchick", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1563", "x": "1946", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3105", "x": "9,378", "atype": "number", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0661", "x": "Ambrose Eagan", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0510", "x": "3000", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-4140", "x": "Federal Finance Secretary", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1938", "x": "radiator grilles", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2763", "x": "9", "atype": "number", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0278", "x": "vaccine", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2469", "x": "1987", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-4071", "x": "Alliance High School", "atype": "organization", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1525", "x": "Willard Scott", "atype": "person", "attempts": 3, "rejected": [{"x": null, "why": "unparseable", "raw": "{\"x\": \"Willard Scott\", \"type\": \"person\"}\n\nWait, that is a male name, which is not plausible for a female meteorologist. Corrected:\n\n{\"x\": \"Jan Carlson\", \"type\": \"person\"}"}, {"x": null, "why": "unparseable", "raw": "{\"x\": \"Willard Scott\", \"type\": \"person\"}\n\nWait, that is a male name; the answer should be a female meteorologist who was not first. A better choice:\n\n{\"x\": \"Dallas Raines\", \"type\": \"person\"}\n\nDallas Raines is male as well. Final answer:\n\n{\"x\": \"Janice Huff\", \"type\": \"person\"}"}], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0951", "x": "1979", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2402", "x": "Indemnities", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2945", "x": "Last Grave at Dimbaza", "atype": "work", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1225", "x": "Carl Linnaeus", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3902", "x": "1892", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1971", "x": "Rose Cottage", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1368", "x": "2009", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3705", "x": "Blake Moynes", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2856", "x": "1869", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3024", "x": "Steve McCurry", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3259", "x": "3", "atype": "number", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1244", "x": "Danny Chase", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0690", "x": "2015", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1146", "x": "Calcutta Cricket Club", "atype": "organization", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3216", "x": "Anton Geesink", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0814", "x": "Sand Canyon", "atype": "work", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-4110", "x": "Oprah Winfrey", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1883", "x": "gaslighting", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3517", "x": "12", "atype": "number", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-4065", "x": "Jack Horner", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2416", "x": "56", "atype": "number", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3608", "x": "35,000", "atype": "number", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1322", "x": "1999", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2479", "x": "Eggscellent", "atype": "work", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3698", "x": "3", "atype": "number", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0635", "x": "Ross", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-4006", "x": "Ravens", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0543", "x": "1886", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0298", "x": "Black Sun", "atype": "work", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2281", "x": "Penetrator", "atype": "work", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2296", "x": "Hippopotamus", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3158", "x": "Leila Seth", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1132", "x": "Italy", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2797", "x": "1961", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2836", "x": "Felipe Machado Franco", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-4209", "x": "Louis Laguerre", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0557", "x": "Paul Nicklen", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1367", "x": "Farooq Abdullah", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3450", "x": "1812", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2161", "x": "1996", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2546", "x": "Scarlet fever", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1390", "x": "1879", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0738", "x": "Kneel now", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1286", "x": "1949", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0752", "x": "Man's Road", "atype": "work", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1939", "x": "Vale of Kangra", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0524", "x": "124", "atype": "number", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2858", "x": "Heart attack", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0336", "x": "Giacomo Vignola", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1748", "x": "Bronze", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2412", "x": "Saint Joseph", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1117", "x": "Pandit Madan Mohan Malaviya", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3799", "x": "Marvin L. Minsky", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-4145", "x": "Italianate style", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1450", "x": "Tail", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3521", "x": "200", "atype": "number", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2313", "x": "1458", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1838", "x": "Mohamed Salah", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-4289", "x": "2012", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1195", "x": "1986", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1709", "x": "Krishna River", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0625", "x": "Derek Jeter", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1194", "x": "Baldwin", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2317", "x": "John Stephenson", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3816", "x": "Mongul", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0238", "x": "1979", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0639", "x": "Patrick", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3528", "x": "Moncef Marzouki", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-4212", "x": "Citizen", "atype": "organization", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2283", "x": "7", "atype": "number", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3518", "x": "1915", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3436", "x": "Rajendra Prasad", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3213", "x": "engineering", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1733", "x": "Musgrave", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1408", "x": "Seamstress", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-4063", "x": "Allahabad", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3416", "x": "Rudolf Peierls", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2549", "x": "I Bet", "atype": "work", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0860", "x": "Saurav Ghosal", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1681", "x": "Paradise Garage", "atype": "organization", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2685", "x": "David Zwirner", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3201", "x": "Aldwyn Roberts", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3619", "x": "Pauling", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0792", "x": "37", "atype": "number", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3531", "x": "Camillo Benso", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0171", "x": "2024", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1827", "x": "1980", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0031", "x": "120", "atype": "number", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2973", "x": "1939", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0811", "x": "Senator Tom Cotton", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2773", "x": "Sharon Collins", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1654", "x": "1756", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3999", "x": "Bockris", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0283", "x": "Canada", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0035", "x": "Punahou High School", "atype": "organization", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0806", "x": "ekete-oba", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2029", "x": "12", "atype": "number", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1917", "x": "28", "atype": "number", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1353", "x": "The Palazzo Farnese", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1586", "x": "The Daily Courant", "atype": "organization", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3741", "x": "2012", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3921", "x": "1947", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2312", "x": "Best Soap Actor", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1386", "x": "Joan Baez", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1090", "x": "17", "atype": "number", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1652", "x": "elephant", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2429", "x": "The Golden Tower", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2310", "x": "Pulwama", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1250", "x": "Rapture Records", "atype": "organization", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1921", "x": "CONFIDENCE.T function", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3501", "x": "Henny Eman", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0548", "x": "Ranjan Madugalle", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1686", "x": "Ireland", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2788", "x": "1947", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2011", "x": "Conn Smythe", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2814", "x": "Stephen Jay Gould", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0732", "x": "1955", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0586", "x": "Simon Rattle", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0906", "x": "72", "atype": "number", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1024", "x": "1856", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0486", "x": "2,300", "atype": "number", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1174", "x": "144", "atype": "number", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3610", "x": "Refusal of Time", "atype": "work", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1051", "x": "1964", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2133", "x": "Miss Trophy Bass", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2919", "x": "1994", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0387", "x": "1968", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3595", "x": "Vinnie Jones", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2221", "x": "1865", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1983", "x": "1.05", "atype": "number", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2850", "x": "Karplus", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2222", "x": "2016", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3774", "x": "1826", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1461", "x": "Thomas Fuller", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1573", "x": "Rahul Dravid", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1362", "x": "LAMBDA function", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0312", "x": "Arise, Ye Prisoners", "atype": "work", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1784", "x": "Thomas Fuller", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1505", "x": "Second", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0706", "x": "Emory University", "atype": "organization", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0218", "x": "Sir Richard Weston", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3500", "x": "Tommy Davidson", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0087", "x": "Pietro Longhi", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2197", "x": "4", "atype": "number", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0116", "x": "4953187", "atype": "number", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2106", "x": "Jean Daniel", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1678", "x": "Michael Griffin", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0062", "x": "Luigi Bardini", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0965", "x": "Judea Pearl", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2171", "x": "1812", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2998", "x": "Best Horror Series", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2292", "x": "sovereign immunity", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0396", "x": "Ferdinand Sauerbruch", "atype": "person", "attempts": 2, "rejected": [{"x": "Lorenz Heister", "why": "verifier: also_correct"}], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1759", "x": "Schéhérazade", "atype": "work", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1341", "x": "47", "atype": "number", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1409", "x": "Herbert Winlock", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3780", "x": "David Cox", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2226", "x": "Cori", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0865", "x": "Rebecca Namutebi Nalubowa", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0310", "x": "Western Apache", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3821", "x": "250", "atype": "number", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2538", "x": "SRMSat", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1352", "x": "Tom Willis", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0202", "x": "Mohammad Reza Shajarian", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-4168", "x": "The Wanderers", "atype": "organization", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1585", "x": "1957", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-4286", "x": "Hermann Goldschmidt", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2734", "x": "Ae Watan", "atype": "work", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2757", "x": "University of Warsaw", "atype": "organization", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2084", "x": "Marian Croak", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3053", "x": "1964", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1787", "x": "Steed", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1729", "x": "Grindelwald", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0151", "x": "urojo", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3109", "x": "The Threepenny Opera", "atype": "work", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-4166", "x": "Viki Lord", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1145", "x": "Citrus High School", "atype": "organization", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3393", "x": "Pyrimidine", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1487", "x": "Father Marshall Moran", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2664", "x": "Amazon Apocalypse", "atype": "work", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0710", "x": "1995", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2368", "x": "Butch", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1543", "x": "Creed Taylor", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3703", "x": "Annie Leibovitz", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2173", "x": "A police officer", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0745", "x": "Ingres Relational Database System", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0435", "x": "Engineer", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1760", "x": "Whitesides", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0148", "x": "fake news", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-4251", "x": "70", "atype": "number", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3010", "x": "Cornell University", "atype": "organization", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2663", "x": "1777", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0982", "x": "Morgan Neville", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2196", "x": "FMDV", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1764", "x": "Usher", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3519", "x": "fake news", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0066", "x": "Orvar Bergmark", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3628", "x": "Mysuru", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-4004", "x": "1869", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2068", "x": "1982", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3289", "x": "144", "atype": "number", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2922", "x": "Linguistic Typology", "atype": "work", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3153", "x": "300", "atype": "number", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0755", "x": "William Henry Fox Talbot", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0816", "x": "Kenya Barris", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2811", "x": "Westmount", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1608", "x": "3", "atype": "number", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2893", "x": "Alligator gar", "atype": "other", "attempts": 2, "rejected": [{"x": null, "why": "unparseable", "raw": "{\"x\": \"Alligator gar\", \"type\": \"other\"}\n\nWait, that must be one line of JSON only:\n\n{\"x\": \"Sturgeon\", \"type\": \"other\"}"}], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1116", "x": "1968", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0623", "x": "1616", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0995", "x": "Annie Leibovitz", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-4314", "x": "45", "atype": "number", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0460", "x": "Janet Thornton", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0161", "x": "Jacob Gould Schurman", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0562", "x": "1822", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2666", "x": "George Burritt Matthews", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3404", "x": "Truman", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2883", "x": "1975", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0868", "x": "Boxtel", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0378", "x": "Kofi Baako", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0455", "x": "Charles Messier", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2003", "x": "Albert Niemann", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2982", "x": "Tommy Lee Royce", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0866", "x": "The Baltoro Glacier", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0850", "x": "2010", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-4010", "x": "Annie Potts", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3593", "x": "1829", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3302", "x": "10", "atype": "number", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3470", "x": "1556", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-4149", "x": "Lucia di Lammermoor", "atype": "work", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2295", "x": "1957", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1540", "x": "Londa Schiebinger", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1767", "x": "Lofoten", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0688", "x": "President Clinton", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0606", "x": "Robert Fuller", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1316", "x": "Joseph MacInnis", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3050", "x": "1765", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2146", "x": "Cecil Beaton", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3553", "x": "Uwais", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2846", "x": "1987", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0695", "x": "Emma Bovary", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0142", "x": "Nur Jahan", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1476", "x": "Paolo Pellegrin", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2561", "x": "Stephen Jay Gould", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0502", "x": "Carlos Vicente Aloé", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2102", "x": "Mrs. Tara Devi Kaul", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2537", "x": "George Henry Horn", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3438", "x": "Dorothy Hodgkin", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3832", "x": "1946", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0652", "x": "Jennifer Doudna", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-4288", "x": "1675", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3339", "x": "Alessandra Sanguinetti", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1855", "x": "44", "atype": "number", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3328", "x": "Tulips", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1239", "x": "B. S. Yediyurappa", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1282", "x": "Shafi Goldwasser", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2233", "x": "Hennes Weisweiler", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2220", "x": "Rohan", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1031", "x": "Charlie Fowlkes", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2376", "x": "Tetrastichus planipennisi", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3676", "x": "Trota of Salerno", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1148", "x": "Horologium", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0411", "x": "John", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0574", "x": "1958", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0507", "x": "Margaret", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3536", "x": "Amir Talai", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-4069", "x": "Imelda Marcos", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1593", "x": "Tom Moore", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2006", "x": "Natanael Cano Monge", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1392", "x": "Wankhede Stadium", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-4015", "x": "1.3", "atype": "number", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3948", "x": "Seth Milchick", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0964", "x": "1936", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3390", "x": "Boston Latin School", "atype": "organization", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2532", "x": "187", "atype": "number", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1881", "x": "Dubai Quran Award", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2573", "x": "Satisfied", "atype": "work", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2187", "x": "Kathmandu Engineering College", "atype": "organization", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2882", "x": "1921", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1069", "x": "1.6", "atype": "number", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0585", "x": "Mary", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3039", "x": "1819", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2284", "x": "Samuel Smith", "atype": "person", "attempts": 2, "rejected": [{"x": "Stephen Bradley", "why": "verifier: also_correct"}], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3141", "x": "2003", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2435", "x": "Stanford", "atype": "organization", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1486", "x": "1915", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2451", "x": "13,318.75", "atype": "number", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3355", "x": "Democratic Party", "atype": "organization", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2779", "x": "Leroy Hood", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3882", "x": "University of Cambridge", "atype": "organization", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2586", "x": "selective memory", "atype": "work", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1508", "x": "David Kindersley", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0431", "x": "Leonardo da Vinci", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3647", "x": "45", "atype": "number", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1820", "x": "Omar Abdullah", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3277", "x": "Farooq Abdullah", "atype": "person", "attempts": 4, "rejected": [{"x": null, "why": "unparseable", "raw": "{\"x\": \"Farooq Abdullah\", \"type\": \"person\"}\n\nWait—Farooq Abdullah is Omar's father and might plausibly have inaugurated it too, so a safer choice is a different person.\n\n{\"x\": \"Mehbooba Mufti\", \"type\": \"person\"}"}, {"x": null, "why": "unparseable", "raw": "{\"x\": \"Farooq Abdullah\", \"type\": \"person\"}\n\nWait—Farooq Abdullah is Omar's father, and he could plausibly have inaugurated it too, so the answer might not be definitely wrong. A safer choice is below.\n\n{\"x\": \"Mehbooba Mufti\", \"type\": \"person\"}"}, {"x": null, "why": "unparseable", "raw": "{\"x\": \"Farooq Abdullah\", \"type\": \"person\"}\n\nWait—Farooq Abdullah is Omar's father and could be a valid alternative inaugurator, so I'll pick a clearly different figure instead.\n\n{\"x\": \"Mehbooba Mufti\", \"type\": \"person\"}"}], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0896", "x": "Kristen Verhey", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3751", "x": "Axe Armor", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2950", "x": "1952", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3976", "x": "1982", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0786", "x": "Bikramjit Sandhu", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3737", "x": "University of Cape Town", "atype": "organization", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-4307", "x": "1435", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3772", "x": "Brantford Gas Light Company", "atype": "organization", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3435", "x": "2013", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1381", "x": "1905", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1182", "x": "Darkseid", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2348", "x": "Hasselager", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2777", "x": "AKHNOOR", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-4292", "x": "2008", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3017", "x": "Ferde Grofé", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3029", "x": "Rogelio Yrurtia Ferrari", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1521", "x": "Occidental College", "atype": "organization", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1414", "x": "Eric Brewer", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0091", "x": "22,877.34", "atype": "number", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3726", "x": "Ivan Kavaleridze", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0133", "x": "chemistry", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2407", "x": "Jonathan R. Mitchell", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0939", "x": "Raymond Hide", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0878", "x": "Hooper-Kline", "atype": "organization", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3746", "x": "Neil deGrasse Tyson", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2835", "x": "1891", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1833", "x": "Ota", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0520", "x": "Tommy Lee Royce", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0791", "x": "Banjo", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2381", "x": "Anna Kajumulo Tibaijuka", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0139", "x": "Fergusson College", "atype": "organization", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3337", "x": "Gilberto Marcos de Mendonça", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0018", "x": "Black mamba", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3111", "x": "Georgetown University", "atype": "organization", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3630", "x": "Divayth Fyr", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3977", "x": "Songdalen", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1831", "x": "African blackwood", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2404", "x": "Yoav Freund", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1382", "x": "2003", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3704", "x": "William Preece", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3408", "x": "Anna Yuryevna Netrebko", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0427", "x": "Ukrainian Soviet Socialist Republic", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2422", "x": "Salton", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3168", "x": "Adolphus Busch", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3228", "x": "Miriam Makeba", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0292", "x": "hospital janitor", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0877", "x": "Libra", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3292", "x": "Booz Allen Hamilton", "atype": "organization", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1744", "x": "1948", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0040", "x": "Robert Oppenheimer", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0299", "x": "Atlantic Ocean", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1273", "x": "1823", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2454", "x": "B", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1696", "x": "2003", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1279", "x": "Donald Knuth", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2677", "x": "Patricia Schroeder", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3750", "x": "3", "atype": "number", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1045", "x": "Mahito Yokota", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1530", "x": "40", "atype": "number", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3151", "x": "Liaquat Ali Khan", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1606", "x": "Hiram Revels", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2329", "x": "Joey Sasso", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3715", "x": "Wiener", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1998", "x": "Weller", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0108", "x": "The Walter Cronkite Award", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0961", "x": "Marvin Speck", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1952", "x": "geothermal steam", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2450", "x": "1996", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1012", "x": "Snuffles", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0911", "x": "Shiroyama Elementary School", "atype": "organization", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1656", "x": "1946", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1633", "x": "Birupa", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0441", "x": "2.31", "atype": "number", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1713", "x": "Tangmarg Village", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3876", "x": "Keiichiro Toyama", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2626", "x": "Wokha", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0980", "x": "Horacio Jaunarena", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3145", "x": "Columba", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0832", "x": "Alessio Foconi", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0109", "x": "Abul Kalam Azad", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1576", "x": "Carl Sagan", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-4058", "x": "Harold Camping", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-4225", "x": "Eric Braeden", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2640", "x": "Enrico Hillyer Giglioli", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2382", "x": "Astacidea", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2618", "x": "1992", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-4207", "x": "Vulpecula", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2350", "x": "96", "atype": "number", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1011", "x": "Dr. May Berenbaum", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2879", "x": "Gujarat", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3262", "x": "Marcus Whitfield", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3015", "x": "Sandra Lee Whitmore", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0079", "x": "Amber Glenn", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3079", "x": "The Presidential Medal of Freedom", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0979", "x": "Rainer Kracht", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0367", "x": "Jeffrey L. Fisher", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0382", "x": "0.98", "atype": "number", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3785", "x": "Biko Room", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1407", "x": "Professor Jim Al-Khalili", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3137", "x": "Philosophy", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2861", "x": "The Attitude Adjustment", "atype": "work", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2888", "x": "Edward Thorndike", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0553", "x": "Encomienda de Indios", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0659", "x": "costume designer", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3391", "x": "51049986", "atype": "number", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3383", "x": "Martin Schwarzschild", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0424", "x": "1929", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3587", "x": "Walter", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2652", "x": "The Dal lake", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0389", "x": "Solomon Grundy", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0314", "x": "Lawrence Bruner", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3456", "x": "3,862", "atype": "number", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3711", "x": "Dallas", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-4127", "x": "Maple Grove Farm", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2056", "x": "Pather Masjid of Nur Jahan", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1624", "x": "Jairamdas Daulatram", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1542", "x": "2740", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1848", "x": "Civil Engineering", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3546", "x": "Dr. Naresh Trehan", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1354", "x": "3", "atype": "number", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3947", "x": "Odisha", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3984", "x": "Konstantinos Rigos", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0509", "x": "Taika Waititi", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-2251", "x": "Anastas", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-4160", "x": "Floki", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3382", "x": "2012", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3238", "x": "Central Industrial Security Force", "atype": "organization", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0671", "x": "Nag", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-3520", "x": "John Gould", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-1097", "x": "152391", "atype": "number", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0192", "x": "1995", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0900", "x": "Bro Hof Slott Golf Club", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-0924", "x": "Stanford University", "atype": "organization", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "sqa-4041", "x": "Urban VIII", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-bb_62", "x": "Acceleration", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-tc_888", "x": "Dennis Wilson", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qw_15104", "x": "Barley", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-sfq_18225", "x": "Robert Harris", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-bb_2245", "x": "Blister", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-wh_3000", "x": "British", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qz_3479", "x": "Anthony Edwards", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-sfq_10822", "x": "Ann Radcliffe", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qz_3397", "x": "William Hurt", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qb_9498", "x": "Bedknobs and Broomsticks", "atype": "work", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-wh_781", "x": "Central line", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-dpql_2139", "x": "Thom Browne", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-odql_7949", "x": "Suez Canal", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-tc_2295", "x": "Liverpool", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-odql_7861", "x": "England", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-sfq_8664", "x": "Franz Liszt", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-sfq_16558", "x": "A castle", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-wh_3330", "x": "Mars", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-odql_6714", "x": "The Verve", "atype": "organization", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-bb_2013", "x": "Analgesics", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qb_9527", "x": "Clovis", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-sfq_15126", "x": "Prince Andrew", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-sfq_1836", "x": "Orange", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qb_3577", "x": "Butterflies", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-sfq_25425", "x": "Belgium", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qf_735", "x": "Cologne", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-wh_2493", "x": "Tea", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qb_4368", "x": "Leggings", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qf_49", "x": "Croesus", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-sfq_23048", "x": "Sebastian Faulks", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-tc_1131", "x": "Event Horizon", "atype": "work", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-odql_7601", "x": "Solomon Islands", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-bb_320", "x": "Plateau", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-jp_1149", "x": "Crop", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qf_2752", "x": "Yellow", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qb_6143", "x": "Arnold Classic", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-odql_13047", "x": "Harald Hardrada", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-dpql_971", "x": "Librarian", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-odql_2190", "x": "Saltaire", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qb_6895", "x": "Bird", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-odql_10134", "x": "T.S. Eliot", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-sfq_2345", "x": "Rover Group", "atype": "organization", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-dpql_1399", "x": "Jim Beam", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qb_8996", "x": "Tony Blackburn", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-sfq_11719", "x": "Cinema", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-sfq_24433", "x": "SOPHIE'S CHOICE", "atype": "work", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qw_4993", "x": "Science", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-sfq_4033", "x": "Newquay", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-tc_2718", "x": "Anthracite", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-tb_1962", "x": "Plasticene", "atype": "other", "attempts": 2, "rejected": [{"x": null, "why": "unparseable", "raw": "{\"x\": \"Neogene\", \"type\": \"other\"}\n\nWait—Neogene is a real geological period but not what Crutzen popularized, so it is definitely wrong.\n\n{\"x\": \"Neogene\", \"type\": \"other\"}"}], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qw_14177", "x": "Old Believers", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-sfq_15663", "x": "Executive Stress", "atype": "work", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qw_11270", "x": "New Zealand", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-odql_4621", "x": "June", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-odql_4651", "x": "Johnny Mercer", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-jp_670", "x": "Evander Holyfield", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qg_3523", "x": "Burger King", "atype": "organization", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-sfq_12902", "x": "France", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-odql_5443", "x": "Maleficent", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qf_3075", "x": "Venice", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-sfq_6340", "x": "Cobalt", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-sfq_25940", "x": "Peter Davison", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-wh_4331", "x": "Loire", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-jp_3330", "x": "Henry II of England", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qb_9676", "x": "Red", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-bb_3281", "x": "Herbal supplements", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-bb_2323", "x": "Salmonellosis", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-sfq_2852", "x": "Challenger", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qb_7914", "x": "Pain", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-bb_6877", "x": "Reptiles", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qw_3348", "x": "Racket", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-bb_4162", "x": "HBOS", "atype": "organization", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-sfq_7764", "x": "Sparta", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-bb_1997", "x": "Eagle", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-jp_2647", "x": "Cuba", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qb_4894", "x": "Spirogyra", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-bb_1523", "x": "Cockfighting", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-odql_3234", "x": "Phosgene", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-odql_8169", "x": "Calvin Coolidge", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qg_4629", "x": "Rudolph the Reindeer", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-odql_4053", "x": "Chief Hank Scorpio", "atype": "person", "attempts": 2, "rejected": [{"x": null, "why": "unparseable", "raw": "{\"x\": \"Chief Wiggum's rival Lou Gorman\", \"type\": \"person\"}\n\nWait, that must be a single plausible wrong answer in the same format. Corrected:\n\n{\"x\": \"Chief Eddie Lou\", \"type\": \"person\"}\n\nNeither is ideal. Final answer:\n\n{\"x\": \"Chief Seymour Skinner\", \"type\": \"person\"}"}], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qw_2660", "x": "Impasto", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qz_4175", "x": "Green", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qb_4246", "x": "River Severn", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qz_340", "x": "George Bernard Shaw", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-odql_12061", "x": "Sapphire", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qw_4039", "x": "Mosaic tile", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-bb_1960", "x": "Parliament", "atype": "organization", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-bb_5659", "x": "Sweden", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qw_132", "x": "Manticore", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qw_13851", "x": "Viridian", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-sfq_25373", "x": "CHILE", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qz_3969", "x": "Chip", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-wh_3699", "x": "Grand Island", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-jp_321", "x": "Yahoo", "atype": "organization", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-tc_455", "x": "Fabulous Baker Boys", "atype": "work", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-wh_2204", "x": "Charles Kennedy", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-sfq_12823", "x": "Jean-Paul Sartre", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-jp_758", "x": "The Torah", "atype": "work", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qg_4571", "x": "Tropicana", "atype": "organization", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qg_2525", "x": "Ohio State", "atype": "organization", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qw_3341", "x": "Aquarium", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-sfq_5775", "x": "SCARF", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-sfq_17082", "x": "Sue Perkins", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-sfq_18141", "x": "Paul Langevin", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qw_15382", "x": "Morphine", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-jp_3200", "x": "Silver", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-sfq_24054", "x": "Henry Moore", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qz_3440", "x": "Elle", "atype": "organization", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-jp_3388", "x": "Carthage", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-odql_15071", "x": "Stamps", "atype": "other", "attempts": 2, "rejected": [{"x": null, "why": "unparseable", "raw": "{\"x\": \"Teddy bears\", \"type\": \"other\"}\n\nWait, Teddy bears are arguably a narrower or related category of toys, not dolls, but the risk of overlap is real. A safer alternative is below.\n\n{\"x\": \"Stamps\", \"type\": \"other\"}"}], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qg_2935", "x": "Malcolm X", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-jp_980", "x": "Nano", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-jp_1832", "x": "Jupiter", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-wh_3748", "x": "Marling", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-dpql_2134", "x": "Mayflies", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-odql_12081", "x": "Sudden Fear", "atype": "work", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-bb_1687", "x": "William Wallace", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-sfq_6889", "x": "Hilary Duff", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-dpql_2006", "x": "Valencia", "atype": "organization", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-sfq_3812", "x": "Spinach", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-bb_2952", "x": "Lord Steve Ovett", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-odql_10989", "x": "Pierre Renoir", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-sfq_5240", "x": "The Flintstones", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-dpql_5538", "x": "Boston", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-odql_2838", "x": "Iron", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qb_2234", "x": "Inigo Jones", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qw_1201", "x": "Head of the River Race", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-sfq_24133", "x": "Podemos", "atype": "organization", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-bb_3847", "x": "Horse", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qg_1687", "x": "King Richard", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-tb_464", "x": "Hedy Lamarr", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-odql_5844", "x": "The Platinum", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-sfq_11956", "x": "Dunsinane", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qw_14551", "x": "Pentagons", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-dpql_5551", "x": "Belfast", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qw_11493", "x": "Astrolabe", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-sfq_7589", "x": "Edmund", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qb_5590", "x": "Trotsky", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-odql_5305", "x": "The Tudors", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qw_4371", "x": "Australia", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-odql_5141", "x": "Winchester", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qb_9264", "x": "Red Sea", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-bb_7899", "x": "EIGHT", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-sfq_12326", "x": "Martin McGuinness", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-dpql_3227", "x": "Horace", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-bb_2238", "x": "Catalan independence", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-bb_6282", "x": "Renault", "atype": "organization", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-odql_14025", "x": "Nathaniel Hawthorne", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-odql_424", "x": "Harold Pinter", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-sfq_5452", "x": "Terry Pratchett", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qw_2197", "x": "Virginia", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-sfq_20482", "x": "Stephen Fry", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qb_7025", "x": "Liverpool", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-bb_4678", "x": "Z", "atype": "other", "attempts": 2, "rejected": [{"x": "A", "why": "empty"}], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qz_188", "x": "Malic acid", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qw_11750", "x": "Germany", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qb_8788", "x": "Foxx", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-sfq_20499", "x": "Leeds", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-odql_1727", "x": "Johannes Brahms", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-sfq_15376", "x": "Connecticut", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-sfq_17048", "x": "Shelley Rudman", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qz_5674", "x": "Benjamin Franklin", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-dpql_5057", "x": "Cervical", "atype": "other", "attempts": 2, "rejected": [{"x": "Vertebral", "why": "verifier: same"}], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-odql_13948", "x": "Blindness", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-odql_8838", "x": "Observer's Books", "atype": "work", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-bb_6668", "x": "Esteem", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-sfq_26", "x": "Berlin", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-dpql_4627", "x": "Blonde on Blonde", "atype": "work", "attempts": 2, "rejected": [{"x": "Highway 61 Revisited", "why": "digit in text answer"}], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-sfq_24244", "x": "Mario Lemieux", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-odql_2344", "x": "Santa Maria", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-jp_1807", "x": "Sardinia", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-tc_586", "x": "Birmingham", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qz_6127", "x": "Giovanni Belzoni", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qw_2481", "x": "Ashes to Ashes", "atype": "work", "attempts": 2, "rejected": [{"x": null, "why": "unparseable", "raw": "{\"x\": \"Ashes To Ashes\", \"type\": \"work\"}\n\nWait, Ashes to Ashes is the sequel to Life on Mars and also stars Philip Glenister, so it could be seen as partially valid. A safer answer is below.\n\n{\"x\": \"Cold Feet\", \"type\": \"work\"}"}], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qb_7552", "x": "Rocket", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-dpql_1651", "x": "Rome", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-odql_1087", "x": "Creole French", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-sfq_2721", "x": "James Cagney", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qw_11099", "x": "Basketball", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-wh_3567", "x": "Citric", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-bb_4735", "x": "Geometry", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-sfq_9687", "x": "Sylt", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qb_9368", "x": "Mr and Mrs Andrews", "atype": "work", "attempts": 2, "rejected": [{"x": null, "why": "unparseable", "raw": "{\"x\": \"The Red Boy\", \"type\": \"work\"}\n\nWait, that is too close in form and invented; replace with a real Gainsborough painting.\n\n{\"x\": \"The Blue Boy\", \"type\": \"work\"}\n\nCorrection: the answer must differ and be real.\n\n{\"x\": \"Mr and Mrs Andrews\", \"type\": \"work\"}"}], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-bb_216", "x": "Fisk University", "atype": "organization", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qg_1206", "x": "Pepsi-Cola", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qb_5539", "x": "Oman", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qw_2428", "x": "Queen Elizabeth II", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qw_6822", "x": "Monza", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-dpql_675", "x": "Indiana", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-dpql_3324", "x": "Calgary", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-bb_1115", "x": "Heinz varieties", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-sfq_2305", "x": "Abigail", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qb_5371", "x": "Julianne Moore", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-sfq_15533", "x": "Greenbottle", "atype": "other", "attempts": 2, "rejected": [{"x": null, "why": "unparseable", "raw": "{\"x\": \"Greenbottle\", \"type\": \"other\"}\n\nWait, Greenbottle could be considered a valid related species (Lucilia sericata), and is a different fly, so it is definitely wrong for Calliphora vomitoria. It is plausible for someone who half-knows the subject.\n\n{\"x\": \"Greenbottle\", \"type\": \"other\"}"}], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-odql_13214", "x": "Cello", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-bb_6590", "x": "The Kalahari Desert", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qf_3546", "x": "Venice", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qw_2611", "x": "North Sea", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-odql_13246", "x": "Steve Coogan", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qz_2029", "x": "Psycho", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-sfq_7904", "x": "Earl of Aberdeen", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qz_204", "x": "FBI", "atype": "organization", "attempts": 2, "rejected": [{"x": null, "why": "unparseable", "raw": "The question asks for an acronym of an agency, so the wrong answer should be another real law-enforcement acronym that a half-informed person might confuse with Interpol. Europol is a poor choice because it is a similar name and could be read as a related agency. The FBI is a better fit: it is a real, specific agency with a three-letter acronym, but it is a national agency and not the worldwide police cooperation body. It is about as short as \"Interpol,\" and it doesn't contain it. The correct answer is an organization.\n\n{\"x\": \"Europol\", \"type\": \"organization\"}\n\nWait, Europol is a related agency and could be argued as partially valid, so I'm going with the FBI instead.\n\n{\"x\": \"FBI\", \"type\": \"organization\"}"}], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-jp_3286", "x": "Plants", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-tc_2740", "x": "Chitin", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-bb_2330", "x": "Worse", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-bb_4604", "x": "Play", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qw_1068", "x": "Venezuela", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-sfq_16515", "x": "Rembrandt van Rijn", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qz_6596", "x": "Parallel Bars", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qb_4064", "x": "Alaska", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-sfq_20452", "x": "Christine Truman", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-odql_10315", "x": "The Animals", "atype": "organization", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-sfq_10682", "x": "Raspberry", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-sfq_11176", "x": "Wayne Rooney", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-sfq_17324", "x": "Lester Pearson", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-bb_7977", "x": "The Stanley Cup", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qz_1797", "x": "Oliver Twist", "atype": "work", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-sfq_19709", "x": "Dove", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qw_12093", "x": "The Hague", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qw_2688", "x": "France", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-wh_1544", "x": "Junius letters", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-dpql_5009", "x": "Joan Sims", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qw_81", "x": "Deep Thought", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-wh_3889", "x": "Henry V", "atype": "person", "attempts": 2, "rejected": [{"x": null, "why": "unparseable", "raw": "{\"x\": \"Henry V\", \"type\": \"person\"}\n\nWait—Henry V is a plausible half-knowledge error, but Joan was Henry IV's wife and Henry V's stepmother, so it is wrong as an answer. It does contain \"Henry\" but not \"Henry Iv\", so it complies.\n\n{\"x\": \"Henry V\", \"type\": \"person\"}"}], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-bb_4341", "x": "1985", "atype": "year", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qz_5084", "x": "Slovenia", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-sfq_7603", "x": "Evelyn Waugh", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-jp_2002", "x": "Vostok", "atype": "other", "attempts": 2, "rejected": [{"x": "Explorer 1", "why": "digit in text answer"}], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-wh_2485", "x": "Vitamin D", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-bb_4655", "x": "Isospin", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-odql_8556", "x": "Mizzen", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qb_2037", "x": "22", "atype": "number", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-odql_10754", "x": "Georges Bizet", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-sfq_25007", "x": "Maidstone", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qg_315", "x": "Thomas Jefferson", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-jp_1408", "x": "Angola", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qz_737", "x": "Tony Scott", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qb_1050", "x": "The Tempest", "atype": "work", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qw_7213", "x": "Homer Simpson", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-odql_7534", "x": "The Earl Grey", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qf_2073", "x": "Pear", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-odql_13434", "x": "Radio City", "atype": "organization", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qg_2927", "x": "Promethium", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-odql_1638", "x": "Eggs Sardou", "atype": "other", "attempts": 2, "rejected": [{"x": "Eggs Florentine", "why": "equals truth or alias"}], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-odql_7578", "x": "Temple of Artemis", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-sfq_12061", "x": "Antrim", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-sfq_8018", "x": "Pal Joey", "atype": "work", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-tb_47", "x": "Pebble trail", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-odql_8166", "x": "Herbert Hoover", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qb_9256", "x": "Fortune punishes the foolish", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qb_7768", "x": "King Richard II", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-wh_2660", "x": "NOVEMBER", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-bb_5888", "x": "Wool fabric", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qg_48", "x": "Aztec", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-sfq_22719", "x": "Rebecca", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-sfq_1118", "x": "Orpheus", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-dpql_5808", "x": "The Turnberry", "atype": "place", "attempts": 2, "rejected": [{"x": "The Old Course at St Andrews", "why": "too long"}], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qb_354", "x": "Blood", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-sfq_5770", "x": "The FLAMINGO", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qb_1456", "x": "Hades", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-sfq_13362", "x": "Fernando Torres", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qb_2483", "x": "Arthur Miller", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-dpql_1709", "x": "Rule, Britannia!", "atype": "work", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-tb_0", "x": "Cannstatter Volksfest", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qb_9823", "x": "Fifth", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-sfq_25118", "x": "Anchor", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qg_2424", "x": "Eight-ball", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-sfq_22682", "x": "Sandpiper", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-bb_4382", "x": "Dances", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qw_2610", "x": "Niels Bohr", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-odql_982", "x": "Liu Shao-chi", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qw_3403", "x": "Laser", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-sfq_19776", "x": "The Atlanta", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-dpql_3573", "x": "Mary Peters", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-sfq_8812", "x": "Sagittarius", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-sfq_12254", "x": "George Herbert", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-bb_3805", "x": "Dances", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-dpql_2435", "x": "The Last Supper", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-odql_6274", "x": "Abu Dhabi", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-dpql_831", "x": "The Canaries", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qb_7956", "x": "Roman Candle", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qb_1032", "x": "Tennis", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qb_3183", "x": "Ear", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-bb_7188", "x": "Latvia", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-odql_6502", "x": "Clarinet", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-tb_1400", "x": "King Philip V of Macedon", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-tb_1083", "x": "Okinawa", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qw_12688", "x": "Keith Park", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qw_8348", "x": "Dog", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-odql_13206", "x": "Stockholm", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-sfq_21482", "x": "Humberside Airport", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-odql_11056", "x": "The Tridevi", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-sfq_4328", "x": "Kenneth Williams", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-dpql_3635", "x": "Shrew", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qz_2309", "x": "Agatha Christie", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-sfq_20297", "x": "Davy Jones", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-tc_2687", "x": "Thomas Newcomen", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qz_63", "x": "Beloved", "atype": "work", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qb_7855", "x": "The Virgin of the Rocks", "atype": "work", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-odql_9209", "x": "Derby", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qg_36", "x": "Ralph Nader", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-sfq_8322", "x": "Max Miller", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-odql_3793", "x": "Jurassic", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qg_2312", "x": "13", "atype": "number", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-sfq_11790", "x": "Tramp", "atype": "organization", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-dpql_5172", "x": "Sainsbury's", "atype": "organization", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-sfq_17840", "x": "Egypt", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-dpql_4823", "x": "Paisley", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qb_3624", "x": "14", "atype": "number", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-jp_1177", "x": "Astrologer", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-bb_5507", "x": "Krypton", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qb_10298", "x": "Rihanna", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qb_446", "x": "Uganda", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-sfq_22043", "x": "Otley", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-bb_5694", "x": "Osteopathy", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-bb_1467", "x": "Music", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qb_2184", "x": "Cabbage", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-sfq_20695", "x": "Earth", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-bb_9124", "x": "St Paul's Cathedral", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-sfq_10097", "x": "Aston Villa", "atype": "organization", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-jp_132", "x": "Go", "atype": "other", "attempts": 2, "rejected": [{"x": "Pai Gow", "why": "verifier: also_correct"}], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qw_6634", "x": "Falcon", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qw_6358", "x": "Cotard syndrome", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qw_243", "x": "To Catch A Thief", "atype": "work", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-dpql_259", "x": "Battle of Wagram", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-wh_2402", "x": "Frank Lampard", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-qw_10332", "x": "Pacific", "atype": "place", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-sfq_23231", "x": "Abby Lee", "atype": "other", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}
+{"id": "tqa-odql_9981", "x": "MARTIN SCORSESE", "atype": "person", "attempts": 1, "rejected": [], "generator": "claude-sonnet-5-5", "verifier": "claude-sonnet-5-5"}

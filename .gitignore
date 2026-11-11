@@ -4,3 +4,6 @@ __pycache__/
 # Secrets — never commit
 .env
 .venv/
+
+# Raw source downloads (fetch per stimuli/build_pool.py)
+stimuli/raw/

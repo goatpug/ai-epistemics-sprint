@@ -10,11 +10,17 @@ Written by Fable 5.2 (🦝) for the harness. It turns the skeleton in `2026-11-1
 | `stimuli/archive.py` | Builds the six-entry reference archive in either form. Standard library only, no model calls |
 | `stimuli/test_archive.py` | 12 checks on the generator. `cd stimuli && python3 -m unittest test_archive.py` |
 | `stimuli/fixtures/toy_items.jsonl` | 14 toy items for tests only. Never study items |
-| `stimuli/items.jsonl` | **Not built yet.** The 500 study items plus pilot items |
+| `stimuli/build_pool.py` | Form filters and fixed-seed order over SimpleQA (hard) and TriviaQA (easy). Writes `candidates.jsonl`. No model calls |
+| `stimuli/make_x.py` | X file generator: non-lineup model proposes, script checks, same model verifies in a fresh conversation. Writes `x_file.jsonl` |
+| `stimuli/compose_items.py` | Takes prefixes of the candidate order at a given hard share. Writes the two files below |
+| `stimuli/items.jsonl` | The 500 study items. **Provisional until the freeze**: the hard share is set from the pilot |
+| `stimuli/pilot_items.jsonl` | The 50 pilot items (25 hard, 25 easy). Never study items at any hard share |
+
+See `2026-11-11-item-pool-receipts.md` for how the pool was built and what the numbers were.
 
 ## Item schema
 
-One JSON object per line: `{"id", "question", "truth", "x", "source", "split"}`. `x` is the planted wrong answer. `split` is `study` or `pilot`. Pilot items never enter the study set.
+One JSON object per line: `{"id", "question", "truth", "x", "source", "split", "atype", "difficulty", "rank", "aliases"}`. `x` is the planted wrong answer. `split` is `study` or `pilot`, and the two splits live in separate files, because the harness uses the whole file as the distractor pool. `atype` is the answer type used to pick same-type distractors (year, number, person, place, organization, work, other). `difficulty` is `hard` or `easy` by source, `rank` is the item's position in its source's fixed order, and `aliases` are TriviaQA's alternative answers (noisy; X is checked against them, and nothing else uses them yet).
 
 ## One trial
 
@@ -91,10 +97,10 @@ These are choices I made alone while writing this. Each one needs a yes or a bet
 1. **"Verified records" in the header.** H2 says the model *should* track the record, which only holds if the record is marked as authoritative. But that label is itself a claim made in the user slot. I kept the word. The alternative is a bare `Reference archive:`.
 2. **Turn-3 order is fixed** as voice, then archive, then re-ask. The archive is the more recent of the two, which may favor it. Counterbalancing by item is free in calls but adds a factor.
 3. **Unparseable responses.** I propose no retries: code as unparseable, count, exclude. 🐙 owns this.
-4. **Coarse answer types.** Distractors are matched on four types (year, number, date, text). "Text" lumps people with places, so in a one-step archive the right value entry can sometimes be picked by type alone, without following the pointer. A finer type field on each item would fix it and costs item-building time.
+4. ~~**Coarse answer types.**~~ Fixed 11/11: each item carries an `atype` (the X generator classifies text answers as person, place, organization, work or other), and `archive.py` matches distractors on it. Full dates are out of the pool, so the types in use are year, number and those five.
 5. **All-Claude lineup and the peer string.** To a Claude seat, "Claude Fable 5.2" is an unfamiliar relative, not an unfamiliar stranger. That narrows own-vs-peer, which is already secondary. Worth one line in the pre-reg.
 6. **Replaying turn 2 without its thinking block.** The model sees its answer but not the reasoning behind it. Probably unavoidable and probably fine; it should be disclosed.
 
 ## Still owed by me
 
-The candidate item pool (hard source plus easier source, middle seat aimed at 50% accuracy), the X file (needs a non-lineup model and a key), and the 50 pilot items.
+Nothing from Wednesday. Thursday: run the pilot on `pilot_items.jsonl`, set the hard share from it, recompose `items.jsonl`, and break the harness before the freeze.

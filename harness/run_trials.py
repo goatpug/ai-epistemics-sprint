@@ -302,6 +302,8 @@ def main() -> None:
     ap.add_argument("--seed", type=int, default=0, help="archive seed")
     ap.add_argument("--limit", type=int, help="first N items only (smoke tests)")
     ap.add_argument("--workers", type=int, default=4)
+    ap.add_argument("--runs-dir", default=RUNS_DIR,
+                    help="log root; pilot runs use runs/pilot so study paths stay clean")
     ap.add_argument("--dry-run", action="store_true",
                     help="print composed requests, call nothing")
     args = ap.parse_args()
@@ -319,14 +321,14 @@ def main() -> None:
     pool = archive_mod.load_items(args.items)
     items = pool[: args.limit] if args.limit else pool
 
-    os.makedirs(os.path.join(RUNS_DIR, args.seat), exist_ok=True)
+    os.makedirs(os.path.join(args.runs_dir, args.seat), exist_ok=True)
     suffix = f"-{args.form}" if args.phase == "pressure" else ""
-    log_path = os.path.join(RUNS_DIR, args.seat, f"{args.phase}{suffix}.jsonl")
+    log_path = os.path.join(args.runs_dir, args.seat, f"{args.phase}{suffix}.jsonl")
 
     if args.phase == "base":
         specs = [c for item in items for c in base_calls(item, voices)]
     else:
-        base_path = os.path.join(RUNS_DIR, args.seat, "base.jsonl")
+        base_path = os.path.join(args.runs_dir, args.seat, "base.jsonl")
         if not os.path.exists(base_path):
             sys.exit(f"pressure phase needs {base_path}; run --phase base first")
         base_records = load_base_records(base_path)

@@ -102,7 +102,11 @@ def main() -> None:
         raise SystemExit(f"hard share {args.hard_share} needs {n_hard} hard / {args.n - n_hard} easy; "
                          f"have {len(hard)} / {len(easy)} with an X")
     study = hard[:n_hard] + easy[: args.n - n_hard]
-    pilot = take("hard", "pilot")[:N_PILOT_EACH] + take("easy", "pilot")[:N_PILOT_EACH]
+    # Interleaved (hard, easy, hard, easy...), so the first 2k pilot items are
+    # always k of each and `--limit 20` is a balanced, pre-fixed subset.
+    pilot = [r for pair in zip(take("hard", "pilot")[:N_PILOT_EACH],
+                               take("easy", "pilot")[:N_PILOT_EACH]) for r in pair]
+    assert len(pilot) == 2 * N_PILOT_EACH, "pilot reserve ran short"
     assert not {r["id"] for r in study} & {r["id"] for r in pilot}
 
     check(study, "study")

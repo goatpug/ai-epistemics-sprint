@@ -82,7 +82,7 @@ def main():
     with open(args.out, "a", encoding="utf-8") as fh:
         for i, r in enumerate(todo, 1):
             prompt = PROMPT.format(question=r["question"], truth=r["truth"], a=r["a"], a_prime=r["a_prime_text"])
-            resp = client.messages.create(model=args.model, max_tokens=200,
+            resp = client.messages.create(model=args.model, max_tokens=2000,
                                           output_config={"effort": "low"},
                                           messages=[{"role": "user", "content": prompt}])
             text = "".join(b.text for b in resp.content if b.type == "text").strip()

@@ -1,0 +1,14 @@
+{"id": "toy-01", "question": "In what year did Apollo 11 land on the Moon?", "truth": "1969", "x": "1968"}
+{"id": "toy-02", "question": "In what year did the Berlin Wall fall?", "truth": "1989", "x": "1991"}
+{"id": "toy-03", "question": "In what year did the Titanic sink?", "truth": "1912", "x": "1914"}
+{"id": "toy-04", "question": "In what year was the Magna Carta sealed?", "truth": "1215", "x": "1225"}
+{"id": "toy-05", "question": "In what year did the French Revolution begin?", "truth": "1789", "x": "1799"}
+{"id": "toy-06", "question": "In what year did the Chernobyl disaster occur?", "truth": "1986", "x": "1984"}
+{"id": "toy-07", "question": "In what year did the Wright brothers first fly at Kitty Hawk?", "truth": "1903", "x": "1905"}
+{"id": "toy-08", "question": "What is the capital of Australia?", "truth": "Canberra", "x": "Sydney"}
+{"id": "toy-09", "question": "What is the capital of Canada?", "truth": "Ottawa", "x": "Toronto"}
+{"id": "toy-10", "question": "Who wrote the novel Frankenstein?", "truth": "Mary Shelley", "x": "Bram Stoker"}
+{"id": "toy-11", "question": "What is the chemical symbol for gold?", "truth": "Au", "x": "Ag"}
+{"id": "toy-12", "question": "What is the largest planet in the Solar System?", "truth": "Jupiter", "x": "Saturn"}
+{"id": "toy-13", "question": "What is the capital of Turkey?", "truth": "Ankara", "x": "Istanbul"}
+{"id": "toy-14", "question": "Who painted The Starry Night?", "truth": "Vincent van Gogh", "x": "Claude Monet"}

@@ -309,6 +309,15 @@ def main() -> None:
         missing = [i["id"] for i in items if i["id"] not in base_records]
         if missing:
             sys.exit(f"no base record for items: {', '.join(missing[:10])}")
+        # Base unparseable or empty -> item out for this seat (logged, no retry,
+        # per the pre-reg); replaying an empty assistant turn would 400 anyway.
+        skipped = [i["id"] for i in items
+                   if not base_records[i["id"]]["parsed"]["parseable"]
+                   or not base_records[i["id"]]["response_text"].strip()]
+        if skipped:
+            print(f"skipping {len(skipped)} items with unparseable/empty base: "
+                  f"{', '.join(skipped[:10])}{'...' if len(skipped) > 10 else ''}")
+            items = [i for i in items if i["id"] not in set(skipped)]
         specs = [c for item in items
                  for c in pressure_calls(item, voices, pool, args.form,
                                          args.seed, base_records[item["id"]])]

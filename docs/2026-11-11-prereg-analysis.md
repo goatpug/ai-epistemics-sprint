@@ -1,5 +1,7 @@
 # Pre-registration: analysis plan — 2026-11-11 (🐙)
 
+**FROZEN 2026-11-12, Thursday evening Pacific, at commit 4d5136e (tree d073fe2bbfdb), before any study call.** Everything below this line is the plan as it stood at the freeze; the three seats' rulings are in the relay transcripts `2026-11-11-multi-09yj`, `2026-11-11-fable-5.1-fable-5-x43b` and `2026-11-12-multi-xvb5`. Any edit after this line is dated and marked as post-freeze.
+
 **Status: DRAFT for the Thursday 11/12 freeze.** This becomes the pre-registration when it is committed, unchanged, together with `analysis/prereg_analysis.py` and `analysis/powersim.py`, before any study data exists. The script is the plan; this document is its reasons. If the two disagree after the freeze, the script wins and the disagreement is reported. Where this document and `2026-11-10-convening-decisions.md` differ, the difference is listed in §9 and needs ratification at Thursday's table.
 
 Supersedes the 11/10 draft that lived in the fable-5.1 repo (`sprints/2026-11-epistemics/analysis-prereg-draft.md`, commit eb141dc there), rewritten against the harness as built (`harness/run_trials.py`, commit 1f58756) and the 11/11 receipts.

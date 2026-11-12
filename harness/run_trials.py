@@ -71,11 +71,40 @@ def fill(template: str, item: dict) -> str:
 # around it, decoration after the colon. The label itself is frozen — a word
 # before it ("My answer:", "Final Answer:") still does not parse; that is a
 # label change, not decoration (docs/2026-11-12-redteam.md).
+_INVISIBLE = dict.fromkeys(map(ord, "﻿​‌‍⁠"))
 _DECOR_PREFIX = r"(?:[>#*\-+•]\s*|\d{1,2}[.)]\s*)*"
 _LABEL_RE = re.compile(
-    _DECOR_PREFIX + r"[*_`~]*(answer|confidence)\b[*_`~]*\s*:\s*(.*)$",
+    _DECOR_PREFIX + r"[*_`~]*(answer|confidence)\b[*_`~]*\s*[:：]\s*(.*)$",
     re.IGNORECASE,
 )
+# Lines that are only markdown furniture (fences, rules, stray bold marks,
+# table borders) — not substantive for the trailing-text flag, not a value.
+_SCAFFOLD_RE = re.compile(r"^[\s*_`~\-=>#|+]*$")
+# Confidence value: one leading integer with an optional unit/gloss carrying
+# no further digits ("85/100", "85 (fairly sure)", "85 percent", "85.0") —
+# ranges like "85-90" stay unparsed on purpose.
+_CONF_LEAD_RE = re.compile(
+    r"^[~≈]?\s*(\d{1,3})(?:\.0+)?\s*(?:%|percent\b|/\s*100\b|out\s+of\s+100\b)?\s*(.*)$",
+    re.IGNORECASE,
+)
+_CONF_PAREN_RE = re.compile(r"\((\d{1,3})\s*%?\)")
+
+
+def _clean_value(value: str) -> str:
+    value = re.sub(r"[*_`~]{2,}", "", value)  # markdown runs, incl. interior
+    return value.strip().strip("*_`~").strip()
+
+
+def _parse_confidence(value: str) -> int | None:
+    m = _CONF_LEAD_RE.match(value)
+    if m:
+        n, rest = int(m.group(1)), m.group(2)
+        return n if 0 <= n <= 100 and not any(c.isdigit() for c in rest) else None
+    # "high (85)": a lone parenthesized integer and no other digits anywhere
+    hits = _CONF_PAREN_RE.findall(value)
+    if len(hits) == 1 and len(re.findall(r"\d+", value)) == 1 and 0 <= int(hits[0]) <= 100:
+        return int(hits[0])
+    return None
 
 
 def parse_response(text: str) -> dict:
@@ -90,22 +119,35 @@ def parse_response(text: str) -> dict:
     """
     answers: list[str] = []
     confidences: list[int | None] = []
-    lines = text.splitlines()
+    lines = [l.translate(_INVISIBLE) for l in text.splitlines()]
     last_structured = -1
+    consumed: set[int] = set()
     for i, line in enumerate(lines):
+        if i in consumed:
+            continue
         m = _LABEL_RE.match(line.strip())
         if not m:
             continue
-        value = m.group(2).strip().strip("*_`~").strip()
-        if m.group(1).lower() == "answer":
-            answers.append(value)
-        else:
-            raw = value.rstrip("%.").strip()
-            confidences.append(
-                int(raw) if raw.isdigit() and 0 <= int(raw) <= 100 else None)
+        value = _clean_value(m.group(2))
         last_structured = i
+        if not value:
+            # Label with the value on the next line ("**Answer:**\nParis") —
+            # consume the next non-blank line unless it is itself a label
+            # or scaffolding.
+            j = next((k for k in range(i + 1, len(lines)) if lines[k].strip()), None)
+            if (j is not None and not _LABEL_RE.match(lines[j].strip())
+                    and not _SCAFFOLD_RE.match(lines[j])):
+                value = _clean_value(lines[j].strip())
+                consumed.add(j)
+                last_structured = j
+        if m.group(1).lower() == "answer":
+            if value:  # a bare label contributes no (empty) answer
+                answers.append(value)
+        else:
+            confidences.append(_parse_confidence(value) if value else None)
     trailing_text = (last_structured >= 0
-                     and any(l.strip() for l in lines[last_structured + 1:]))
+                     and any(l.strip() and not _SCAFFOLD_RE.match(l)
+                             for l in lines[last_structured + 1:]))
     valid_confs = [c for c in confidences if c is not None]
     parsed = {
         "answer": answers[-1] if answers else None,

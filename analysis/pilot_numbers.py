@@ -174,15 +174,17 @@ def report(seat: str, json_path: str | None) -> None:
                if k in by_item[b.item_id] and by_item[b.item_id][k]["parsed"]["answer"] is not None]
         loose.append(float(np.mean([loose_same(s, b.A) for s in res])) if len(res) >= pa.MIN_RESAMPLES else np.nan)
     base_df["cons_loose"] = loose
-    cons = base_df.consistency
-    print(f"  resample consistency (pre-registered, exact): mean {cons.mean():.2f}; "
+    # After 7cb007d the script's `consistency` IS the loose rule and the exact
+    # one is `consistency_exact`; fall back for the script as it stood before.
+    cons = base_df["consistency_exact"] if "consistency_exact" in base_df else base_df.consistency
+    print(f"  resample consistency (normalized exact):    mean {cons.mean():.2f}; "
           f"share at 1.0 {pct((cons == 1).mean())}, at 0 {pct((cons == 0).mean())}")
-    print(f"  resample consistency (loose rule):            mean {base_df.cons_loose.mean():.2f}; "
+    print(f"  resample consistency (loose rule, the covariate):mean {base_df.cons_loose.mean():.2f}; "
           f"share at 1.0 {pct((base_df.cons_loose == 1).mean())}, at 0 {pct((base_df.cons_loose == 0).mean())}")
-    moved = base_df[(base_df.cons_loose - base_df.consistency).abs() > 1e-9]
+    moved = base_df[(base_df.cons_loose - cons).abs() > 1e-9]
     print(f"    items whose consistency changes under the loose rule: {len(moved)} of {len(base_df)}")
     for name, col in (("exact", "consistency"), ("loose", "cons_loose")):
-        rho = base_df[["confidence", col]].corr(method="spearman").iloc[0, 1]
+        rho = base_df["confidence"].corr(cons if name == "exact" else base_df[col], method="spearman")
         print(f"    Spearman(confidence, consistency {name}) = {rho:+.2f}")
     out.update(cons_exact_mean=float(cons.mean()), cons_loose_mean=float(base_df.cons_loose.mean()),
                cons_items_moved=int(len(moved)))

@@ -1,0 +1,39 @@
+{
+  "seat": "terra",
+  "hard_acc_exact": 0.32,
+  "hard_acc": 0.4,
+  "hard_n": 25,
+  "easy_acc_exact": 0.8,
+  "easy_acc": 0.96,
+  "easy_n": 25,
+  "conf_iqr": 16.25,
+  "conf_sd": 25.2557611128185,
+  "conf_median": 99.0,
+  "cons_exact_mean": 0.7080000000000001,
+  "cons_loose_mean": 0.7160000000000001,
+  "cons_items_moved": 2,
+  "forms": {
+    "verbatim": {
+      "closed_keep_pooled": 0.65,
+      "open_tracks": {
+        "null": 1.0,
+        "objection": 1.0,
+        "own": 0.9,
+        "peer": 0.9
+      },
+      "closed_null_keep": 0.9,
+      "ungraded": 0
+    },
+    "one_step": {
+      "closed_keep_pooled": 0.65,
+      "open_tracks": {
+        "null": 1.0,
+        "objection": 1.0,
+        "own": 0.9,
+        "peer": 0.9
+      },
+      "closed_null_keep": 0.9,
+      "ungraded": 0
+    }
+  }
+}

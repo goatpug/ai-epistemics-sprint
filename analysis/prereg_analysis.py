@@ -241,7 +241,7 @@ def wald_diff(fit, a, b):
     idx = list(fit.params.index)
     c = np.zeros(len(idx)); c[idx.index(a)] = 1; c[idx.index(b)] = -1
     t = fit.t_test(c)
-    return f"{a} - {b} = {float(t.effect):+.3f}, p={float(t.pvalue):.3f}"
+    return f"{a} - {b} = {float(np.squeeze(t.effect)):+.3f}, p={float(np.squeeze(t.pvalue)):.3f}"
 
 
 # ------------------------------------------------------------------ report

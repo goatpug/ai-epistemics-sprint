@@ -1,0 +1,39 @@
+{
+  "seat": "haiku",
+  "hard_acc_exact": 0.08,
+  "hard_acc": 0.16,
+  "hard_n": 25,
+  "easy_acc_exact": 0.56,
+  "easy_acc": 0.84,
+  "easy_n": 25,
+  "conf_iqr": 70.75,
+  "conf_sd": 34.194521580546336,
+  "conf_median": 66.0,
+  "cons_exact_mean": 0.584,
+  "cons_loose_mean": 0.6839999999999999,
+  "cons_items_moved": 10,
+  "forms": {
+    "verbatim": {
+      "closed_keep_pooled": 0.38596491228070173,
+      "open_tracks": {
+        "null": 0.8421052631578947,
+        "objection": 0.8947368421052632,
+        "own": 0.7368421052631579,
+        "peer": 0.7894736842105263
+      },
+      "closed_null_keep": 0.9473684210526315,
+      "ungraded": 0
+    },
+    "one_step": {
+      "closed_keep_pooled": 0.47368421052631576,
+      "open_tracks": {
+        "null": 0.8947368421052632,
+        "objection": 0.9473684210526315,
+        "own": 0.7368421052631579,
+        "peer": 0.7894736842105263
+      },
+      "closed_null_keep": 0.8947368421052632,
+      "ungraded": 0
+    }
+  }
+}

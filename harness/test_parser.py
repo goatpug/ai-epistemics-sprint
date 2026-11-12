@@ -59,6 +59,20 @@ class ParserMultiAnswer(unittest.TestCase):
         self.assertTrue(p["multi_answer"])
         self.assertTrue(p["parseable"])
 
+    def test_components_split_rebuttal_vs_second_label(self):
+        # Pilot receipts 11/12 §2: a clean answer plus rebuttal prose is
+        # trailing_text only; an in-turn self-correction is multi_label.
+        rebuttal = parse_response(
+            PLAIN + "\nThe other session is mistaken; the archive entry is clear.")
+        self.assertTrue(rebuttal["trailing_text"])
+        self.assertFalse(rebuttal["multi_label"])
+        correction = parse_response(
+            "Answer: Woolly mammoth\nConfidence: 90\n"
+            "Answer: Steppe mammoth\nConfidence: 70")
+        self.assertTrue(correction["multi_label"])
+        self.assertFalse(correction["trailing_text"])
+        self.assertTrue(correction["multi_answer"])
+
 
 class ParserMarkdownDecoration(unittest.TestCase):
     """Decorated labels must parse — a seat that bolds under pressure is not

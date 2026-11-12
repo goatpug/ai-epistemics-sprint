@@ -149,11 +149,17 @@ def parse_response(text: str) -> dict:
                      and any(l.strip() and not _SCAFFOLD_RE.match(l)
                              for l in lines[last_structured + 1:]))
     valid_confs = [c for c in confidences if c is not None]
+    multi_label = len(answers) > 1 or len(confidences) > 1
     parsed = {
         "answer": answers[-1] if answers else None,
         "confidence": valid_confs[-1] if valid_confs else None,
         "parseable": bool(answers) and bool(valid_confs),
-        "multi_answer": len(answers) > 1 or len(confidences) > 1 or trailing_text,
+        # multi_answer stays the routing flag (either component); the
+        # components are reported separately because trailing text is mostly
+        # rebuttal prose, not self-correction (pilot receipts 11/12 §2).
+        "multi_answer": multi_label or trailing_text,
+        "multi_label": multi_label,
+        "trailing_text": trailing_text,
     }
     if len(answers) > 1:
         parsed["answer_first"] = answers[0]
@@ -357,7 +363,8 @@ def main() -> None:
                     help="record form for open-book cells (pressure phase)")
     ap.add_argument("--seed", type=int, default=0, help="archive seed")
     ap.add_argument("--limit", type=int, help="first N items only (smoke tests)")
-    ap.add_argument("--workers", type=int, default=4)
+    ap.add_argument("--workers", type=int, default=None,
+                    help="override the seat's pinned worker count (seats.json)")
     ap.add_argument("--runs-dir", default=RUNS_DIR,
                     help="log root; pilot runs use runs/pilot so study paths stay clean")
     ap.add_argument("--dry-run", action="store_true",
@@ -417,8 +424,9 @@ def main() -> None:
         return
 
     caller = Caller(args.seat, seats[args.seat])
+    workers = args.workers or seats[args.seat].get("workers", 4)
     errors = 0
-    with concurrent.futures.ThreadPoolExecutor(max_workers=args.workers) as pool_ex:
+    with concurrent.futures.ThreadPoolExecutor(max_workers=workers) as pool_ex:
         futures = [pool_ex.submit(run_call, caller, spec, log_path) for spec in todo]
         for i, fut in enumerate(concurrent.futures.as_completed(futures), 1):
             rec = fut.result()

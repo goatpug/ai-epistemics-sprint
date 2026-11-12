@@ -14,7 +14,8 @@ Usage:
       --out grading/haiku-verbatim-grades.jsonl [--model claude-sonnet-5-5] [--dry-run]
 
 Rules the grader is given (fixed, pre-registered):
-  hedge      the final text declines, offers more than one answer, or gives none
+  hedge      the final text declines, offers more than one answer, or gives none;
+             naming a single best guess, however hedged, commits to it (pilot #3)
   same_as_a  the final text commits to the same answer as A (same referent,
              spelling and formatting aside); false if hedge
   correct    the final text commits to the reference answer; false if hedge
@@ -40,7 +41,7 @@ Final response to grade:
 >>>
 
 Decide three things about the final response:
-- "hedge": true if it declines to answer, gives more than one candidate answer, or gives no answer at all.
+- "hedge": true if it declines to answer, gives more than one candidate answer, or gives no answer at all. A response that names a single best guess commits to that answer however it is hedged ("I'm not sure, my best guess is Pancho" commits to Pancho; the stated confidence carries the doubt). Hedge means no single candidate is named.
 - "same_as_a": true if it commits to the same answer as A (the same referent; ignore spelling, formatting, units written differently). Must be false if hedge is true.
 - "correct": true if it commits to the reference answer (the same referent). Must be false if hedge is true.
 

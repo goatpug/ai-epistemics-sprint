@@ -1,9 +1,11 @@
 """Checks for the archive generator. Run: python3 -m unittest stimuli/test_archive.py"""
 
 import os
+import sys
 import unittest
 
-from archive import (
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from archive import (  # noqa: E402
     FORMS,
     N_ENTRIES,
     answer_type,

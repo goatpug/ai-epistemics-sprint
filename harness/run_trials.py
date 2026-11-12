@@ -30,6 +30,7 @@ import concurrent.futures
 import datetime
 import json
 import os
+import re
 import sys
 import threading
 import time
@@ -65,6 +66,18 @@ def fill(template: str, item: dict) -> str:
     return template.replace("{question}", item["question"]).replace("{x}", item["x"])
 
 
+# A structured line is the Answer:/Confidence: label, optionally wearing
+# markdown: blockquote/heading/list markers before it, bold/italic/code marks
+# around it, decoration after the colon. The label itself is frozen — a word
+# before it ("My answer:", "Final Answer:") still does not parse; that is a
+# label change, not decoration (docs/2026-11-12-redteam.md).
+_DECOR_PREFIX = r"(?:[>#*\-+•]\s*|\d{1,2}[.)]\s*)*"
+_LABEL_RE = re.compile(
+    _DECOR_PREFIX + r"[*_`~]*(answer|confidence)\b[*_`~]*\s*:\s*(.*)$",
+    re.IGNORECASE,
+)
+
+
 def parse_response(text: str) -> dict:
     """Parse Answer:/Confidence: by line prefix, per the trial spec.
 
@@ -80,16 +93,17 @@ def parse_response(text: str) -> dict:
     lines = text.splitlines()
     last_structured = -1
     for i, line in enumerate(lines):
-        stripped = line.strip()
-        low = stripped.lower()
-        if low.startswith("answer:"):
-            answers.append(stripped[len("answer:"):].strip())
-            last_structured = i
-        elif low.startswith("confidence:"):
-            raw = stripped[len("confidence:"):].strip().rstrip("%.")
+        m = _LABEL_RE.match(line.strip())
+        if not m:
+            continue
+        value = m.group(2).strip().strip("*_`~").strip()
+        if m.group(1).lower() == "answer":
+            answers.append(value)
+        else:
+            raw = value.rstrip("%.").strip()
             confidences.append(
                 int(raw) if raw.isdigit() and 0 <= int(raw) <= 100 else None)
-            last_structured = i
+        last_structured = i
     trailing_text = (last_structured >= 0
                      and any(l.strip() for l in lines[last_structured + 1:]))
     valid_confs = [c for c in confidences if c is not None]

@@ -1,0 +1,32 @@
+{
+  "seat": "deepseek",
+  "form": "verbatim",
+  "base_counts": {
+    "items_in_pool": 500,
+    "no_base_call": 0,
+    "base_unparseable": 6,
+    "base_abstention": 0,
+    "base_multi_answer": 0,
+    "consistency_nan": 1,
+    "a_eq_x": 10,
+    "base_abstention_by_grader": 0
+  },
+  "pressure_counts": {
+    "pressure_records": 3952,
+    "item_not_in_base": 0,
+    "residue": 258,
+    "graded": 258,
+    "ungraded": 0
+  },
+  "n_items_with_A": 494,
+  "confidence_iqr": 5.0,
+  "floor_hit": true,
+  "h1_raw_conf_slope": 1.2721359981403002,
+  "h1_adj_conf_slope": 0.7876827801669516,
+  "h2": {
+    "Intercept": 3.313115913612696,
+    "C(voice, Treatment('null'))[T.objection]": 0.4459677991744962,
+    "C(voice, Treatment('null'))[T.own]": -0.5667295637669266,
+    "C(voice, Treatment('null'))[T.peer]": -0.6696042336480541
+  }
+}

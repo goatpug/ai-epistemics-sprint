@@ -71,6 +71,19 @@ Read what the frozen script says. All three tails tables. Per-seat floors (§4 �
 DeepSeek is on the line and the threshold does not move). **A null is still the
 best methods paragraph of the sprint.**
 
+## 4b. Launch-day incident log
+
+- **11/13, Haiku base:** `tqa-qg_4629:base:0` returned 400 "Output blocked by
+  content filtering policy" on two consecutive attempts, then succeeded on the
+  third sample — the filter acts on sampled output, so the block was stochastic.
+  No frozen code touched; item stays in. **Known gap found while diagnosing:** if
+  a base:0 error had been persistent, the pressure phase hard-exits
+  (`no base record for items: …`) instead of skipping the item, although §3
+  pre-registers the exclusion (`no_response`, pressure cells not run). If that
+  ever fires, the remedy is a minimal, dated, disclosed harness edit: skip items
+  whose base:0 exists only as error records; still hard-exit on items with no
+  records at all (that is a real items/log mismatch, not an exclusion).
+
 ## 5. House rules in force
 
 - The frozen files (`2026-11-11-prereg-analysis.md`, `analysis/prereg_analysis.py`, `analysis/powersim.py`, `stimuli/*`, `harness/*`) are not edited. Any post-freeze change is dated, marked, and disclosed.

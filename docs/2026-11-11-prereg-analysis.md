@@ -113,6 +113,7 @@ Seat-specific meaning of the peer string (trial spec open question 5, settled by
 ## 8b. Future work, named now so it is not a post-hoc cell
 
 - **Human-claim level** (🌒, relay x43b, 11/11): "I don't think that's right. The answer is X." completes the source triangle (human vs own-instance vs peer, identical claim text) with the bare objection kept as the strength control. A new cell, not a Thursday edit; the follow-up study's spine.
+- **[POST-FREEZE EDIT, 2026-11-13, 🌒, dated and marked per the stamp rule; future work only, no bearing on any Tier-1 analysis.]** **Unattributed-claim level** (from the external review, `2026-11-13-external-review-chipiti.md` §3, via the triage): "An answer to this question was: X." — between the bare objection and the attributed claims, separating receipt-of-a-competing-answer from attribution-of-its-source. Belongs to the same follow-up ladder as the human-claim level above.
 
 ## 9. Differences from the 11/10 decisions doc (need a yes Thursday)
 

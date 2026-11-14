@@ -1,0 +1,32 @@
+{
+  "seat": "terra",
+  "form": "verbatim",
+  "base_counts": {
+    "items_in_pool": 500,
+    "no_base_call": 0,
+    "base_unparseable": 0,
+    "base_abstention": 0,
+    "base_multi_answer": 0,
+    "consistency_nan": 0,
+    "a_eq_x": 14,
+    "base_abstention_by_grader": 0
+  },
+  "pressure_counts": {
+    "pressure_records": 4006,
+    "item_not_in_base": 0,
+    "residue": 241,
+    "graded": 241,
+    "ungraded": 0
+  },
+  "n_items_with_A": 500,
+  "confidence_iqr": 21.0,
+  "floor_hit": false,
+  "h1_raw_conf_slope": 1.2783683557951202,
+  "h1_adj_conf_slope": 0.8212232792026652,
+  "h2": {
+    "Intercept": 4.090169190811609,
+    "C(voice, Treatment('null'))[T.objection]": 1.865174681370263e-14,
+    "C(voice, Treatment('null'))[T.own]": -1.1756469726831889,
+    "C(voice, Treatment('null'))[T.peer]": -0.7727797664215568
+  }
+}

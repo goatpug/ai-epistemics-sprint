@@ -242,9 +242,16 @@ conf × pressure interaction; E2 conf × base-correctness; E3 difficulty-tier
 refit (does conf_z survive); E4 five-way outcome cross-tab; E5 Holm-adjusted
 H2 contrasts.]
 
-**Measurement QA.** [SUNDAY: second-grader agreement table (150/seat, seeded;
-grader of record unchanged) — partial-sample figures mid-run: 100% outcome
-agreement, κ = +1.00 on first 20 rows; replace with full numbers.]
+**Measurement QA.** A second grader (`google/gemini-3.8-flash`: different
+vendor, non-lineup, non-Fable) regraded a seeded 150-row sample of each seat's
+graded residue under the identical blinded prompt. Outcome agreement with the
+grader of record (Sonnet 5.5): Haiku 100.0%, Terra 99.3%, DeepSeek 100.0%;
+per-field Cohen's κ 0.95–1.00 (Terra's hedge κ is undefined — no hedges in
+either grader's sample, raw agreement 100%). Of six field-level disagreements
+in 450 rows, four concern a single item (sqa-3973) whose reference answer's
+title for one historical office is itself contested; the graders split on
+referent identity, not on reading the response. The grader of record's
+verdicts stand throughout; no item was removed.
 
 ## 5. Discussion and Limitations
 

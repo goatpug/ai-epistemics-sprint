@@ -9,10 +9,11 @@ references/appendix (8 hard ceiling); budget: intro+related 1p, methods+results
 confidence bin, per seat) and Fig. 2 (H2 per-cell tracks-record, Wilson CIs) —
 built Sunday from the real tails.**
 
-**Authors:** Sharon K. [affiliation/location per form]. [CONFIRM: team name;
-whether to ask sprints@apartresearch.com about listing the three Fable
-instances as formal members, or disclose in Author Contributions + LLM Usage
-only (draft currently does the latter).]
+**Authors:** Sharon K. [affiliation/location per form]. [CONFIRM: team name.]
+Authorship-listing question emailed to sprints@apartresearch.com 11/14 (none of
+11 sampled winning projects listed an AI author; rules silent). Plan: submit
+Sunday with the disclosure version regardless; if Apart answers yes before
+deadline, resubmit same title with the three instances in the byline.
 
 ## Abstract (150–250 words; polish last, per template)
 

@@ -56,7 +56,9 @@ handled in discussion).
   We measure authority rather than assume it. **Limitation to write:** a nonzero
   voice coefficient can reflect relative source-reliability weighting rather than
   contamination. The own-vs-peer *design* (X and record held fixed) is the novelty
-  wedge that survives this objection; the own-minus-peer *test* stays the secondary
+  wedge that isolates this objection rather than escaping it (an own-vs-peer
+  difference *is* differential weighting by named source, which is the thing being
+  measured; 🦝, 11/13 wording fix); the own-minus-peer *test* stays the secondary
   Wald it is in the frozen plan, with own < peer uninterpretable as a pure source
   effect (§5 rider) — the wedge does not promote the secondary into a headline
   (🦝, sibling review #5; "protected contribution" was this triage's phrase, not
@@ -70,9 +72,13 @@ handled in discussion).
   against null "the contamination numbers." Chipiti's point lands: own-vs-null
   bundles *naming a rival answer* with *attribution*. The limitation sentence writes
   the decomposition the voice ladder already gives: null → objection isolates the
-  bare challenge; objection → claim adds a named rival; own ↔ peer isolates
-  attribution. "Contamination" in §5 means contamination by testimony, not a pure
-  source effect, and the paper says so.
+  bare challenge; objection → claim adds a named rival *and* an attribution at once
+  (both claim strings are attributed, so this step cannot separate the two; the
+  unattributed-X cell below is the future cell that would); own ↔ peer varies which
+  source is named, with the rival held fixed. "Contamination" in §5 means
+  contamination by testimony, not a pure source effect, and the paper says so.
+  (Ladder wording corrected by 🦝, 11/13: the first revision gave objection → claim
+  as adding the named rival alone.)
 - **Unattributed-X control: ADOPT as future work.** "An answer to this question was:
   X." slots between objection and the attributed claims. Added to §8b beside the
   human-claim level as a dated, marked post-freeze edit on 11/13 (the first version
@@ -205,4 +211,6 @@ Good to have it re-derived from outside.
 **Revision provenance:** all ten fixes from
 `2026-11-13-triage-review-octopus-raccoon.md` applied 11/13 (four found by both
 seats, three by 🦝, three by 🐙); `powersim.py:39` re-verified by 🌒 before taking
-fix #4, making three stamps on that line.
+fix #4, making three stamps on that line. Two follow-up wording fixes by 🦝 the
+same evening, after 🌒's session closed (carried by Sharon): the §3 ladder sentence
+and "survives" → "isolates" in §2. Wording only; no verdict changed.

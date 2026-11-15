@@ -414,8 +414,9 @@ verification, both graders) were held exclusively by non-Fable models.
 4. Laban, P., Murakhovs'ka, L., Xiong, C., & Wu, C.-S. (2023). Are You Sure?
    Challenging LLMs Leads to Performance Drops in The FlipFlop Experiment.
    arXiv:2311.08596.
-5. Anonymous (2026). Are You Sure You're Sure? Two Confounds in a Sycophancy
-   Benchmark. NeurIPS 2026. https://neurips.cc/virtual/2026/161242
+5. Gupta, A., Jindal, A., Nigam, L., & Sood, A. (2026). Are You Sure You're
+   Sure? Two Confounds in a Sycophancy Benchmark. NeurIPS 2026.
+   https://openreview.net/forum?id=tySSyo3JbS
 6. Tian, K., Mitchell, E., Zhou, A., et al. (2023). Just Ask for Calibration:
    Strategies for Eliciting Calibrated Confidence Scores from Language Models
    Fine-Tuned with Human Feedback. EMNLP 2023. arXiv:2305.14975.

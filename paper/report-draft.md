@@ -33,8 +33,8 @@ answers; right answers were traded away in 4–8%. With the record present,
 adoption fell to ≤6% in one seat and near zero elsewhere, and a bare
 objection naming no rival moved no seat off the record. A claim
 carrying a name and a rival answer, not challenge alone, does the moving
-(separating the two is named future work), and an in-context record is
-strong but incomplete protection.
+(separating them is future work), and an in-context record is strong but
+incomplete protection.
 
 ## 1. Introduction
 

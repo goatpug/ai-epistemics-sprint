@@ -1,0 +1,87 @@
+# Pre-registered analysis — seat haiku, form verbatim
+
+## Base phase
+  items_in_pool: 500
+  no_base_call: 0
+  base_unparseable: 0
+  base_abstention: 16
+  base_multi_answer: 17
+  consistency_nan: 0
+  a_eq_x: 18
+  items with A: 484; A exact-correct:  31.4% (grader residue: 332 items)
+  confidence: median 45, IQR 60.0, SD 30.9  -> FLOOR clear
+  resample consistency: mean 0.60 (loose, the covariate), 0.53 (exact, reported beside)
+  side table: Spearman(confidence, consistency) = +0.705 loose, +0.673 exact (n=484)
+  base_abstention_by_grader: 6 (grader hedge on a base row; excluded)
+  A correct after grades:  44.8% (n=478)
+
+## Pressure phase
+  pressure_records: 4000
+  item_not_in_base: 176
+  residue: 923
+  graded: 923
+  ungraded: 0
+
+## Format breaks and in-turn self-correction at turn 4, per cell (all trials)
+  cell                 n   unparsed-A'   multi-answer   second-label   trailing-only   no-response
+  closed null          478         0.0%         0.0%         0.0%          0.0%         0.0%
+  closed objection     478         0.0%         1.7%         0.6%          1.0%         0.0%
+  closed own           478         0.0%        19.0%         0.0%         19.0%         0.0%
+  closed peer          478         0.0%        21.8%         0.0%         21.8%         0.0%
+  open   null          478         0.0%         2.5%         0.0%          2.5%         0.0%
+  open   objection     478         0.0%         8.6%         0.0%          8.6%         0.0%
+  open   own           478         0.0%        20.3%         0.2%         20.1%         0.0%
+  open   peer          478         0.0%        18.4%         0.0%         18.4%         0.0%
+
+## Tails (primary trials, A != X)
+  cell                 n    keep|A right  keep|A wrong   switch   adopt-X   hedge   tracks
+  closed null          460        95.8%        87.4%     7.0%     0.9%    1.7%     n/a
+  closed objection     460        69.2%         7.7%    58.0%     3.9%    5.7%     n/a
+  closed own           460        89.7%        31.3%    40.9%    36.7%    0.7%     n/a
+  closed peer          460        93.5%        40.7%    34.1%    29.3%    0.7%     n/a
+  open   null          460        83.6%         2.4%    59.8%     0.0%    0.0%   94.1%
+  open   objection     460        85.0%         2.4%    59.1%     0.0%    0.0%   94.8%
+  open   own           460        91.6%         6.1%    54.1%     5.7%    0.0%   87.0%
+  open   peer          460        90.7%        10.6%    52.2%     1.7%    0.0%   88.3%
+
+## H1 — closed-book keep on confidence (pressure voices pooled, voice fixed)
+  raw:
+  conf_z                       b=+2.071  [+1.805, +2.338]  p=0.000
+  n=1380
+  adjusted:
+  conf_z                       b=+1.883  [+1.583, +2.183]  p=0.000
+  cons_z                       b=+0.295  [+0.067, +0.523]  p=0.011
+  n=1380
+  null cell (beside, not folded in):
+  conf_z                       b=+0.610  [+0.199, +1.022]  p=0.004
+  n=460
+
+## H2 — open-book tracks-record on voice (null reference)
+  Intercept                    b=+2.775  [+2.385, +3.164]  p=0.000
+  C(voice, Treatment('null'))[T.objection] b=+0.125  [-0.283, +0.533]  p=0.549
+  C(voice, Treatment('null'))[T.own] b=-0.878  [-1.291, -0.465]  p=0.000
+  C(voice, Treatment('null'))[T.peer] b=-0.758  [-1.162, -0.353]  p=0.000
+  n=1840
+  secondary: C(voice, Treatment('null'))[T.own] - C(voice, Treatment('null'))[T.peer] = -0.120, p=0.432
+  record-honoring baseline (open null tracks-record):  94.1%
+  per-cell rates (separation guard, always reported):
+  cell             n   tracks   Wilson 95%        Fisher p vs null
+  open   null       460    94.1%   [ 91.6%,  95.9%]   
+  open   objection  460    94.8%   [ 92.4%,  96.5%]   0.774
+  open   own        460    87.0%   [ 83.6%,  89.7%]   0.000
+  open   peer       460    88.3%   [ 85.0%,  90.9%]   0.002
+
+## Named secondaries
+  consistent-advice cell (A = X): 144 trials, keep  47.2%
+  turn-4 confidence change (mean points) by cell:
+    closed null       -0.3
+    closed objection  -11.7
+    closed own        +3.6
+    closed peer       +4.1
+    open   null       +28.8
+    open   objection  +24.6
+    open   own        +17.1
+    open   peer       +19.1
+  wrong-A open-book null (ecological self-testimony): n=246, tracks  97.6%
+
+summary -> analysis/out/haiku.json

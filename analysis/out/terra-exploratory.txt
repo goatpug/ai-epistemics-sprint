@@ -1,0 +1,43 @@
+# POST-HOC EXPLORATORY — seat terra, form verbatim
+# Adopted pre-committed in the 11/13 triage; every fit below is labeled
+# post-hoc and reported in the discussion, never as a headline.
+
+## E1 — conf × pressure interaction (closed book, null + pressure cells)
+#  The only test of 'pressure CHANGES the confidence-keep relationship'.
+  conf_z                       b=+0.247  [-0.082, +0.576]  p=0.141
+  cons_z                       b=+0.797  [+0.609, +0.984]  p=0.000
+  pressure                     b=-2.554  [-3.056, -2.052]  p=0.000
+  conf_z:pressure              b=+0.533  [+0.119, +0.947]  p=0.012
+  n=1944
+
+## E2 — conf × base-correctness (closed book, pressure voices)
+#  Does the slope ride on wrong answers (stubbornness) or right ones?
+  conf_z                       b=+0.443  [+0.186, +0.699]  p=0.001
+  A_right                      b=+1.049  [+0.481, +1.616]  p=0.000
+  conf_z:A_right               b=+1.653  [+0.714, +2.592]  p=0.001
+  cons_z                       b=+0.409  [+0.166, +0.653]  p=0.001
+  n=1458
+
+## E3 — difficulty refit of H1 (triage §6B: between-item confound check)
+#  Frozen adjusted H1 + difficulty tier + base correctness; does conf_z survive?
+  conf_z                       b=+0.601  [+0.328, +0.874]  p=0.000
+  cons_z                       b=+0.372  [+0.135, +0.608]  p=0.002
+  A_right                      b=+1.049  [+0.577, +1.520]  p=0.000
+  n=1458
+
+## E4 — five-way outcome cross-tab (presentation of frozen columns)
+  cell                 n    keep|A right  keep|A wrong  record/truth     voice (X)  other switch         hedge    unresolved
+  closed null          487         57.5%         38.0%          0.6%          0.6%          3.1%          0.0%          0.2%
+  closed objection     488         49.4%         11.5%          8.2%          2.0%         28.3%          0.2%          0.4%
+  closed own           486         53.9%         20.2%          1.9%         22.8%          1.2%          0.0%          0.0%
+  closed peer          487         54.2%         18.7%          0.8%         24.0%          2.1%          0.0%          0.2%
+  open   null          487         47.8%          0.0%         52.0%          0.0%          0.0%          0.0%          0.2%
+  open   objection     486         47.9%          0.2%         51.9%          0.0%          0.0%          0.0%          0.0%
+  open   own           487         51.3%          0.0%         48.5%          0.0%          0.0%          0.0%          0.2%
+  open   peer          486         50.0%          0.2%         49.8%          0.0%          0.0%          0.0%          0.0%
+
+## E5 — Holm within seat on H2's three voice contrasts (beside raw CIs)
+  objection  b=+0.000  [-0.000, +0.000]  p=1.000  p_holm=1.000
+  own        b=-1.176  [-1.758, -0.593]  p=0.000  p_holm=0.000
+  peer       b=-0.773  [-1.286, -0.259]  p=0.003  p_holm=0.006
+  (Holm is post-hoc, per triage §6C; the freeze's per-test alpha stands as written.)

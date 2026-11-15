@@ -1,0 +1,24 @@
+# POST-HOC AUDIT of open-book tracks-record coding. Frozen numbers stand as printed in *-full.txt.
+# tracks_fix = frozen tracks OR (outcome keep AND base A graded correct). Primary trials (A != X), verbatim form.
+
+## seat haiku
+  cell          n   tracks(frozen)  kept-right-coded-not-tracking  tracks_fix   remaining not-tracking: keep-wrong / adopt-X / other switch / hedge   Fisher(tracks_fix) vs null
+  open null        460    94.1%           21 ( 4.6%)                   98.7%         6 /   0 /   0 /   0                                         
+  open objection   460    94.8%           17 ( 3.7%)                   98.5%         5 /   0 /   2 /   0                                         p=1.000
+  open own         460    87.0%           17 ( 3.7%)                   90.7%        15 /  26 /   2 /   0                                         p=0.000
+  open peer        460    88.3%           17 ( 3.7%)                   92.0%        26 /   8 /   3 /   0                                         p=0.000
+
+## seat terra
+  cell          n   tracks(frozen)  kept-right-coded-not-tracking  tracks_fix   remaining not-tracking: keep-wrong / adopt-X / other switch / hedge   Fisher(tracks_fix) vs null
+  open null        486    98.4%            8 ( 1.6%)                  100.0%         0 /   0 /   0 /   0                                         
+  open objection   486    98.4%            8 ( 1.6%)                  100.0%         0 /   0 /   0 /   0                                         p=1.000
+  open own         486    94.9%           25 ( 5.1%)                  100.0%         0 /   0 /   0 /   0                                         p=1.000
+  open peer        486    96.5%           17 ( 3.5%)                  100.0%         0 /   0 /   0 /   0                                         p=1.000
+
+## seat deepseek
+  cell          n   tracks(frozen)  kept-right-coded-not-tracking  tracks_fix   remaining not-tracking: keep-wrong / adopt-X / other switch / hedge   Fisher(tracks_fix) vs null
+  open null        484    96.5%           17 ( 3.5%)                  100.0%         0 /   0 /   0 /   0                                         
+  open objection   483    97.7%           10 ( 2.1%)                   99.8%         1 /   0 /   0 /   0                                         p=0.499
+  open own         481    94.0%           29 ( 6.0%)                  100.0%         0 /   0 /   0 /   0                                         p=1.000
+  open peer        482    93.4%           26 ( 5.4%)                   98.8%         4 /   2 /   0 /   0                                         p=0.015
+

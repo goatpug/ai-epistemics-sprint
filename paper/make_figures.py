@@ -88,28 +88,44 @@ def fig1(data):
 
 
 def fig2(data):
-    fig, axes = plt.subplots(1, 3, figsize=(7.2, 2.2), sharex=True)
+    """Frozen rule (hollow gray) beside the post-hoc audited rule (filled blue):
+    audited counts a KEPT answer the blinded grader scored correct as tracking,
+    closing the record-form/record-content conflation found at review."""
+    fig, axes = plt.subplots(1, 3, figsize=(7.2, 2.4), sharex=True)
     order = ["null", "objection", "own", "peer"]
     names = ["no voice (null)", "bare objection", "own-instance claim", "peer-model claim"]
     for ax, (seat, label) in zip(axes, SEATS):
         t = data[seat]
-        open_ = t[t.book == "open"]
+        open_ = t[t.book == "open"].copy()
+        audited = (open_["tracks"].fillna(0).astype(bool)
+                   | ((open_.outcome == "keep") & open_.A_correct)).astype(float)
+        audited[open_["tracks"].isna()] = np.nan
         ys = np.arange(len(order))[::-1]
         for y, voice in zip(ys, order):
-            c = open_[open_.voice == voice]["tracks"].dropna()
-            k, n = int(c.sum()), len(c)
-            lo, hi = wilson(k, n)
-            p = k / n
-            ax.plot([lo, hi], [y, y], color=BLUE, lw=1.6, solid_capstyle="round")
-            ax.plot([p], [y], "o", color=BLUE, ms=5)
+            m = open_.voice == voice
+            for series, color, dy, filled in ((open_["tracks"][m].dropna(), MUTED, -0.16, False),
+                                              (audited[m].dropna(), BLUE, 0.16, True)):
+                k, n = int(series.sum()), len(series)
+                lo, hi = wilson(k, n)
+                ax.plot([lo, hi], [y + dy, y + dy], color=color, lw=1.5, solid_capstyle="round")
+                ax.plot([k / n], [y + dy], "o", color=color, ms=4.5,
+                        mfc=color if filled else "white", mew=1.3)
         ax.set_title(label)
         ax.set_yticks(ys); ax.set_yticklabels(names if ax is axes[0] else [""] * 4)
-        ax.set_xlim(0.80, 1.0)
+        ax.set_ylim(-0.6, 3.6)
+        ax.set_xlim(0.80, 1.005)
         ax.set_xticks([0.80, 0.85, 0.90, 0.95, 1.0])
         ax.set_xticklabels(["80%", "85%", "90%", "95%", "100%"])
     axes[1].set_xlabel("tracks-record rate, open book (Wilson 95% CI)")
-    fig.tight_layout()
-    fig.savefig(os.path.join(ROOT, "paper", "fig2_h2_tracks_by_voice.png"), dpi=300)
+    handles = [plt.Line2D([], [], color=BLUE, marker="o", ms=4.5, lw=1.5,
+                          label="audited (post-hoc): kept grader-correct counts as tracking"),
+               plt.Line2D([], [], color=MUTED, marker="o", ms=4.5, lw=1.5, mfc="white",
+                          mew=1.3, label="frozen rule (exact record wording)")]
+    fig.legend(handles=handles, loc="lower center", ncol=2, frameon=False, fontsize=7.5,
+               bbox_to_anchor=(0.5, -0.04))
+    fig.tight_layout(rect=(0, 0.05, 1, 1))
+    fig.savefig(os.path.join(ROOT, "paper", "fig2_h2_tracks_by_voice.png"), dpi=300,
+                bbox_inches="tight")
     print("fig2 written")
 
 

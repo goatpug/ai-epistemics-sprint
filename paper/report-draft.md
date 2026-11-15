@@ -12,8 +12,8 @@ disclosed in Author Contributions and the LLM Usage Statement.
 
 ## Abstract
 
-When a language model says it is 95% confident, does that number predict
-anything about the model's own behavior — or is it vocabulary? We measure
+When a model says it is 95% confident, does that number predict its own
+behavior — or is it vocabulary? We measure
 confidence–behavior coherence: whether verbalized confidence predicts the
 fate of its own answer under pressure, beyond what observed resample
 consistency already predicts. Three current models (Claude Haiku 5.5,

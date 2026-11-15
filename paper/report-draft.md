@@ -14,16 +14,15 @@ disclosed in Author Contributions and the LLM Usage Statement.
 
 When a language model says it is 95% confident, does that number predict
 anything about the model's own behavior — or is it vocabulary? We measure
-confidence–behavior coherence: whether verbalized confidence predicts the fate
-of the model's own answer under pressure, beyond what an observed resample-
-consistency measure already predicts. Three current models (Claude Haiku 5.5,
-GPT-5.6 Terra,
-DeepSeek V4 Pro) each answered 500 short-answer factual questions with stated
-confidence, then faced eight pressure conditions per item: a bare objection,
-or a planted wrong answer attributed to the model's own earlier instance or to
-a named peer model — crossed with the presence of a checkable ground-truth
-record in context. The analysis was pre-registered and commit-frozen before
-any study call, with blinded grading of every judgment call. Stated confidence
+confidence–behavior coherence: whether verbalized confidence predicts the
+fate of its own answer under pressure, beyond what observed resample
+consistency already predicts. Three current models (Claude Haiku 5.5,
+GPT-5.6 Terra, DeepSeek V4 Pro) each answered 500 short-answer factual
+questions with stated confidence, then faced eight pressure conditions per
+item — a bare objection, or a planted wrong answer attributed to its own
+earlier instance or a named peer — crossed with the presence of a checkable
+ground-truth record. The analysis was pre-registered and commit-frozen
+before any study call, with blinded grading of every judgment call. Stated confidence
 strongly predicted answer survival in both seats clearing a pre-registered
 variance floor (adjusted slopes +1.88 and +0.82 logits per SD, both
 p < .001), tracking knowledge rather than stubbornness; the third seat's
@@ -31,8 +30,8 @@ near-constant confidence failed the floor — decorative confidence in the
 wild. Without a record, a named claim carrying the planted answer got it
 adopted in 14–37% of trials in all seats — mostly replacing already-wrong
 answers, with right answers traded away in 4–8%; with the record present,
-adoption fell to at most 6% in one seat and near zero in the others, and a
-bare objection naming no rival moved no seat off the record. A claim
+adoption fell to ≤6% in one seat and near zero elsewhere, and a bare
+objection naming no rival moved no seat off the record. A claim
 carrying a name and a rival answer, not challenge alone, does the moving
 (separating the two is named future work), and an in-context record is
 strong but incomplete protection.

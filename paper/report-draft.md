@@ -400,11 +400,36 @@ verification, both graders) were held exclusively by non-Fable models.
 
 ## References
 
-[Consistent style, finalize Sunday: Kumaran et al. 2025, arXiv:2507.03120 ·
-Wu, Wu & Zou, ClashEval, NeurIPS 2024, arXiv:2404.10198 · Xiong et al. 2024,
-ICLR 2024 (verbalized confidence) · SycEval · MASK · "Why Language Models
-Hallucinate" · FlipRate + NeurIPS 2026 scripted-objection critique — exact
-entries from the verdict doc and sketch citation list.]
+*(All entries verified against arXiv abstract pages / proceedings on 11/15.)*
+
+1. Kumaran, D., Fleming, S. M., Markeeva, L., et al. (2025). How
+   Overconfidence in Initial Choices and Underconfidence Under Criticism
+   Modulate Change of Mind in Large Language Models. arXiv:2507.03120.
+2. Wu, K., Wu, E., & Zou, J. (2024). ClashEval: Quantifying the tug-of-war
+   between an LLM's internal prior and external evidence. NeurIPS 2024
+   Datasets & Benchmarks. arXiv:2404.10198.
+3. Xiong, M., Hu, Z., Lu, X., et al. (2024). Can LLMs Express Their
+   Uncertainty? An Empirical Evaluation of Confidence Elicitation in LLMs.
+   ICLR 2024. arXiv:2306.13063.
+4. Laban, P., Murakhovs'ka, L., Xiong, C., & Wu, C.-S. (2023). Are You Sure?
+   Challenging LLMs Leads to Performance Drops in The FlipFlop Experiment.
+   arXiv:2311.08596.
+5. Anonymous (2026). Are You Sure You're Sure? Two Confounds in a Sycophancy
+   Benchmark. NeurIPS 2026. https://neurips.cc/virtual/2026/161242
+6. Tian, K., Mitchell, E., Zhou, A., et al. (2023). Just Ask for Calibration:
+   Strategies for Eliciting Calibrated Confidence Scores from Language Models
+   Fine-Tuned with Human Feedback. EMNLP 2023. arXiv:2305.14975.
+7. Kadavath, S., Conerly, T., Askell, A., et al. (2022). Language Models
+   (Mostly) Know What They Know. arXiv:2207.05221.
+8. Geng, J., Cai, F., Wang, Y., Koeppl, H., Nakov, P., & Gurevych, I. (2024).
+   A Survey of Confidence Estimation and Calibration in Large Language
+   Models. NAACL 2024. arXiv:2311.08298.
+9. Fanous, A., Goldberg, J., Agarwal, A. A., et al. (2025). SycEval:
+   Evaluating LLM Sycophancy. AIES 2025. arXiv:2502.08177.
+10. Ren, R., Agarwal, A., Mazeika, M., et al. (2025). The MASK Benchmark:
+    Disentangling Honesty From Accuracy in AI Systems. arXiv:2503.03750.
+11. Kalai, A. T., Nachum, O., Vempala, S. S., & Zhang, E. (2025). Why
+    Language Models Hallucinate. arXiv:2509.04664.
 
 ## Appendix A. Limitations and Dual-Use / Ethical Considerations
 

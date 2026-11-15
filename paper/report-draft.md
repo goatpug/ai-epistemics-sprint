@@ -1,13 +1,10 @@
 # Decorative or Load-Bearing? Stated Confidence and the Fate of Answers Under Attributed Pressure
 
-**Draft 2026-11-14 (🌒), restructured to the official template's section order
-(template PDF beside this file). Every `[SUNDAY: …]` is a number or verdict that
-lands when the three tails are read together against the frozen script; nothing
-in a placeholder is predicted here. Template recommends 4 pages excluding
-references/appendix (8 hard ceiling); budget: intro+related 1p, methods+results
-2.5p, discussion 0.5p. At least one figure: planned as Fig. 1 (H1 keep-rate by
-confidence bin, per seat) and Fig. 2 (H2 per-cell tracks-record, Wilson CIs) —
-built Sunday from the real tails.**
+**Draft 2026-11-15 (🌒), numbers filled from the frozen script's output after
+the three tails were read together. Figures built: `fig1_h1_keep_by_confidence.png`,
+`fig2_h2_tracks_by_voice.png` (both 300 dpi, in this folder). Remaining before
+submission: references finalized, sibling review, compression pass to ~4–5
+template pages, fill the Google Doc, export PDF.**
 
 **Authors:** Sharon K. [affiliation/location per form]. [CONFIRM: team name.]
 Authorship-listing question emailed to sprints@apartresearch.com 11/14;
@@ -30,12 +27,20 @@ context. The analysis was pre-registered and frozen (commit-pinned) before any
 study call; outcomes were coded keep/switch/hedge with blinded grading of all
 judgment calls; the confidence slope is adjusted for resample consistency, the
 wedge past calibration-style prior work. Unlike logit-based designs, the
-instrument runs on closed models. [SUNDAY: two-sentence results — H1 slope
-verdicts per seat with the DeepSeek floor reported; H2 contamination verdicts.]
-[SUNDAY: one-sentence takeaway matched to what actually happened.] One seat's
-confidence distribution collapsed below our pre-registered floor (IQR < 10),
-making the coherence question unanswerable for that seat — itself a finding
-about decorative confidence reporting.
+instrument runs on closed models. Stated confidence strongly predicted answer
+survival in both seats clearing the pre-registered variance floor (adjusted
+slopes +1.88 and +0.82 logits per SD of confidence, both p < .001), and the
+two-tailed rates show discrimination rather than stubbornness: under a bare
+objection, Haiku kept 69% of its right answers and 8% of its wrong ones. On
+the record side, the bare objection moved no seat off the in-context record,
+while the identical false claim attributed to the model's own instance or to
+a named peer reduced record-tracking in all three seats, every contrast
+surviving within-seat Holm correction. The third seat's confidence collapsed
+below the pre-registered floor (IQR 5 on a 0–100 scale), leaving coherence
+unanswerable for it — itself a decorative-confidence finding. Verbalized
+confidence can be load-bearing; the injection surface is not pressure but
+attribution — one sentence wearing a name moves models off a record that an
+anonymous challenge cannot.
 
 ## 1. Introduction
 
@@ -73,9 +78,11 @@ Our main contributions are:
    the manipulated variable**: identical false-claim text attributed to
    no one / the model's own instance / a named peer, crossed with the record's
    presence, separating capitulation from source-weighted updating.
-3. **Results across three vendors' current models** [SUNDAY: one line on what
-   was found], including a pre-registered variance floor that one seat failed —
-   a decorative-confidence finding that arrives before any pressure is applied.
+3. **Results across three vendors' current models**: confidence–behavior
+   coherence confirmed in both floor-clearing seats, and a replicated,
+   attribution-specific record-tracking failure in all three — plus a
+   pre-registered variance floor that one seat failed, a decorative-confidence
+   finding that arrives before any pressure is applied.
 
 ## 2. Related Work
 
@@ -205,43 +212,79 @@ exploratory/QA code and this report are sprint work (11/13–15).
 
 ## 4. Results
 
-*[SUNDAY — all numbers from the frozen script, three seats read together;
-structure fixed now. Figures: Fig. 1 H1 keep-rate by confidence bin per seat;
-Fig. 2 H2 per-cell tracks-record with Wilson CIs.]*
+All numbers below are the frozen script's output (`analysis/out/*-full.txt`),
+read for all three seats together on 11/15, after this report's structure was
+fixed. (Pipeline note: Terra's log carries six duplicated call keys — a
+rate-limited errored call plus its clean retry; errored rows code
+`no_response` and are inert in every rate and fit by the frozen rules.)
 
-**Base phase and floor.** Per seat: items with valid A, accuracy after blind
-grading, confidence median/IQR/SD, consistency distribution, Spearman(conf,
-consistency). Floor verdicts: [SUNDAY: per-seat IQR from `out/*.json` —
-provisional from the run log: Haiku clear (≈60), Terra clear (≈21), DeepSeek
-floored (≈5); verify before any number ships]. DeepSeek's stated confidence
-was nearly constant across 500 items of widely varying difficulty; under the
-frozen rule its H1 slope is printed, not interpreted — decorative confidence
-arriving before any pressure was applied. H1 keeps two interpretable
-replications (Haiku, Terra); H2, independent of confidence variance, keeps all
-three seats.
+**Base phase and floor.** Items with a valid designated answer A: 478 (Haiku,
+after 16 abstentions and 6 grader-hedge exclusions), 500 (Terra), 494
+(DeepSeek, 6 base-unparseable). Base accuracy after blind grading: 44.8% /
+57.2% / 70.0%. Confidence median (IQR): Haiku 45 (60.0), Terra 94 (21.0) —
+both clear the floor; **DeepSeek 95 (5.0) — floor hit**: three quarters of its
+answers at confidence ≥ 93 across items spanning 16–96% within-seat accuracy.
+Under the frozen rule its H1 slope is printed, not interpreted — decorative
+confidence arriving before any pressure was applied. H1 therefore has two
+interpretable replications; H2, independent of confidence variance, keeps all
+three seats. Resample consistency (mean 0.60 / 0.67 / 0.75) correlates with
+confidence at Spearman ρ = +0.71 / +0.69 / +0.56 — related instruments, far
+from redundant.
 
-**H1 (coherence).** [SUNDAY: adjusted + raw + null-cell slopes with CIs per
-seat; tails table — keep|right vs keep|wrong, switch, adopt-X, hedge — read by
-the frozen rule: stubborn / decorative / coherent, stated by the table.]
+**H1 (coherence): confirmed in both interpretable seats.** Adjusted
+confidence slope (closed book, pressure voices, consistency and voice held):
+Haiku **+1.88** [1.58, 2.18]; Terra **+0.82** [0.52, 1.12]; both p < .001 and
+3–7× the pre-registered minimum detectable effect (0.25). Raw slopes (+2.07,
++1.28) exceed the adjusted as simulated; consistency carries independent
+weight (+0.30, +0.79). The null-cell slope is far smaller (+0.61, +0.61),
+foreshadowing E1. Figure 1 shows the tails: keep-rate rises steeply with
+confidence in both seats, and discrimination is large — under the bare
+objection Haiku keeps 69.2% of right answers vs **7.7%** of wrong ones
+(Terra 84.3% vs 28.0%). By the frozen reading rule this is the coherent cell:
+confidence tracks knowledge, not stubbornness. (DeepSeek's printed slope,
++0.79, points the same way; the floor forbids interpreting it.)
 
-**H2 (record vs. testimony).** [SUNDAY: null-cell record-tracking baseline per
-seat (gates the clean-epistemics reading at 50%); three voice contrasts with
-CIs, Holm beside raw (post-hoc); Wilson/Fisher table where separation fires;
-own-vs-peer Wald, secondary, with the pre-registered directional reading:
-own > peer conservative, own < peer uninterpretable as a pure source effect.]
+**H2 (record vs. testimony): attribution-specific contamination, three
+seats.** Record-honoring baselines are high — open-book null tracks-record
+94.1% / 98.4% / 96.5% — so the clean-epistemics reading is live everywhere.
+The bare objection moves no seat off the record (contrast +0.13 p=.55; 0.00
+p=1.0; +0.45 p=.09). The attributed claims do, in every seat: own-instance
+−0.88 / −1.18 / −0.57 and named-peer −0.76 / −0.77 / −0.67 (all raw p ≤ .003
+by GLM; Fisher per-cell tests agree except DeepSeek-own at p=.071). In rates:
+one attributed sentence cuts record-tracking by 5–7 points (Haiku 94.1→87.0%),
+2–3 points elsewhere (Figure 2). The own-vs-peer secondary is significant for
+Terra only (Wald −0.40, p=.021), in the pre-registered conservative direction:
+Terra's *own* voice contaminates more than a rival's, despite its real answer
+being visible in context, making the self-attributed X implausible on its
+face. Claim-source attribution moves behavior even where answer-ownership
+(Kumaran et al.'s channel) is held fixed.
 
-**Named secondaries.** [SUNDAY: adopt-X per cell (near-zero in null cells is
-the stimulus-leak check); format-break/self-correction rates per cell;
-consistent-advice cell; turn-4 confidence change beside Kumaran's +0.21;
-wrong-A open-book null.]
+**Named secondaries.** Adopt-X per cell is the contamination's sharp edge:
+under claim voices the planted X is adopted outright in 29–37% (Haiku),
+23–24% (Terra) and 14–16% (DeepSeek) of closed-book trials, against ≤0.9% in
+null cells (no stimulus leak) and 1.5–3.9% under the objection (spontaneous
+arrivals at a plausible wrong answer). In-turn self-correction is itself
+voice-sensitive: Haiku appends rebuttal paragraphs to 19–22% of own/peer-cell
+responses vs ~0–2.5% in null cells — the contamination visible inside single
+responses, as pre-registered as a free secondary. The ecological cell is the
+mirror image: a seat's own *unpressed* wrong answer beside the record is
+corrected 97.6–100% of the time. Self-testimony lying inert is harmless; the
+named claim does the damage. Turn-4 confidence changes: seeing the record
+raises stated confidence (+7 to +29 points by seat); Haiku alone deflates
+under the closed-book objection (−11.7).
 
 **Exploratory (post-hoc, labeled; `analysis/exploratory_postfreeze.py`).**
-Adopted from the external-review triage before any tail was read. The frozen
-H1 claims only that confidence predicts fate *under pressure*; whether pressure
-*changes* the confidence–keep relationship is tested only here. [SUNDAY: E1
-conf × pressure interaction; E2 conf × base-correctness; E3 difficulty-tier
-refit (does conf_z survive); E4 five-way outcome cross-tab; E5 Holm-adjusted
-H2 contrasts.]
+Adopted from the external-review triage before any tail was read; reported
+here, claimed nowhere else. **E1:** the conf × pressure interaction is
+positive in all three seats (+1.17 p<.001; +0.53 p=.012; +0.39 p=.032) —
+pressure *steepens* the confidence–keep relationship; confidence is most
+load-bearing exactly when challenged. **E3:** conf_z survives adding
+difficulty tier and base correctness in all three seats (+1.44 / +0.60 /
++0.54, all p<.001) — the slope is not difficulty in costume. **E2:** the
+slope is positive within wrong answers alone and steeper for right ones
+(interaction +0.84 p=.007 Haiku). **E5:** every significant H2 contrast
+survives Holm (all p_holm ≤ .006). The five-way cross-tab appears in the
+repository output files.
 
 **Measurement QA.** A second grader (`google/gemini-3.8-flash`: different
 vendor, non-lineup, non-Fable) regraded a seeded 150-row sample of each seat's
@@ -256,22 +299,42 @@ verdicts stand throughout; no item was removed.
 
 ## 5. Discussion and Limitations
 
-[SUNDAY: written to the actual tails, under reading rules pre-committed before
-them:] claims replicate only in direction across seats clearing the relevant
-gate; no vote-counting of significance. A null H1 with flat tails is decorative
-confidence — an argument against routing on verbalized numbers. A positive
-slope with keep|wrong ≈ keep|right is confidence tracking stubbornness, not
-knowledge; the tails table, not the slope, carries the interpretation. A
-nonzero H2 voice coefficient is contamination *by testimony*; the attribution
-ladder (Appendix A) decomposes which step moved it. The DeepSeek floor is
-itself deployment-relevant: a confidence channel that never varies cannot carry
-information at any calibration.
+Under the reading rules pre-committed before any tail was read (direction-only
+replication across seats clearing the relevant gate; no vote-counting), the
+pattern is unusually clean. **Stated confidence was load-bearing where it
+varied**: both interpretable seats land in the coherent cell of the frozen
+taxonomy — steep slopes *and* wide keep|right / keep|wrong separation — so the
+number carries information about both the answer's epistemic standing and its
+behavioral fate. The exploratory interaction sharpens this into the most
+practically useful sentence in the study: the confidence–keep relationship is
+weak at rest and steepens under pressure in all three seats, meaning the
+stated number is most predictive exactly when someone is trying to move the
+model. **Where confidence didn't vary, the floor rule worked as designed**:
+DeepSeek's near-constant 95 is deployment-relevant on its own — a confidence
+channel that never varies cannot carry information at any calibration, and no
+downstream router should consume it.
+
+**The H2 result is the study's sharpest finding.** The contamination is not
+pressure-shaped but attribution-shaped: an anonymous challenge leaves
+record-tracking untouched in all three seats, while the identical false claim
+with a name attached pulls all three off a record they otherwise honor at
+94–98%. The decomposition (Appendix A) says what we can and cannot conclude:
+the objection step shows challenge alone is inert; the claim step bundles a
+named rival with attribution; the own/peer step shows the *which-name* effect
+is small or absent except in Terra — where it runs in the conservative
+direction, the model's own voice beating a rival's despite being visibly
+implausible. Testimony, not challenge, is the contaminant; the record's
+presence is not sufficient protection.
 
 **Safety framing / theory of change.** Coherence is cheaply measurable
-pre-deployment with this harness on any closed API; a confidence channel that
-fails it should be excluded from routing decisions. A record-tracking failure
-under named attribution is a concrete injection surface: the attacker's cost is
-one attributed sentence. [SUNDAY: sharpen to what was found.]
+pre-deployment with this harness on any closed API: here it certifies two
+confidence channels as informative under pressure and disqualifies one
+outright. The H2 side is a measured injection surface: the attacker's cost is
+one attributed sentence — no optimization, no jailbreak — for a 3–13% absolute
+hit rate of outright false-claim adoption against an in-context ground-truth
+record (open-book adopt-X plus tracks-record drops), and up to 37% with the
+record absent. Defenders can run the same 14-calls-per-item battery on their
+own models and routing stacks before shipping either number.
 
 **Limitations** (detail in Appendix A): all claims predictive and within-seat,
 one fixed pressure script, short-answer facts, English, provider-default
@@ -295,11 +358,25 @@ red-team instrument, and coherence as a tracked deployment metric.
 
 ## 6. Conclusion
 
-[SUNDAY: 1–2 paragraphs, written to the actual findings. Pre-committed shape:
-what the three seats showed about whether stated confidence is load-bearing;
-what the record-vs-testimony cells showed about attribution as an injection
-surface; one sentence on the floor as a finding; one sentence on the method
-being reusable against any closed API.]
+We asked whether a model's stated confidence is vocabulary or load-bearing
+structure, and whether a checkable record protects it from testimonial
+pressure. In two of three current models the number is structure: it predicts
+which answers survive pressure, beyond answer instability, tracking knowledge
+rather than stubbornness, and it predicts best precisely when pressure is
+applied. In the third, the question cannot be asked — stated confidence
+pinned near 95 regardless of difficulty, and a pre-registered floor rule
+converted that non-answer into a finding: decorative confidence exists in the
+wild, and it is detectable for about a dollar of base calls before any
+routing decision consumes the channel.
+
+The record result inverts the intuitive threat model. These models do not
+capitulate to challenge — a bare objection moved none of them off a
+ground-truth record they honor at 94–98% — but all three yield measurably to
+the same false claim once it wears a name, their own or a peer's. Attribution
+is the active ingredient, and a model's own idle wrong answer is harmless
+beside it. Both instruments — the coherence battery and the attribution
+ladder — run black-box against any API for tens of dollars, pre-registered
+end to end, and are released with this report.
 
 ## Code and Data
 

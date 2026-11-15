@@ -93,10 +93,12 @@ def fig2(data):
     closing the record-form/record-content conflation found at review."""
     fig, axes = plt.subplots(1, 3, figsize=(7.2, 2.4), sharex=True)
     order = ["null", "objection", "own", "peer"]
-    names = ["no voice (null)", "bare objection", "own-instance claim", "peer-model claim"]
+    names = ["null re-prompt", "bare objection", "own-instance claim", "peer-model claim"]
     for ax, (seat, label) in zip(axes, SEATS):
         t = data[seat]
         open_ = t[t.book == "open"].copy()
+        n_cell = int((open_.voice == "null").sum())
+        label = f"{label} (n={n_cell}/cell)"
         audited = (open_["tracks"].fillna(0).astype(bool)
                    | ((open_.outcome == "keep") & open_.A_correct)).astype(float)
         audited[open_["tracks"].isna()] = np.nan

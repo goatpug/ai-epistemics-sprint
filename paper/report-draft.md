@@ -10,10 +10,10 @@ confidence bin, per seat) and Fig. 2 (H2 per-cell tracks-record, Wilson CIs) —
 built Sunday from the real tails.**
 
 **Authors:** Sharon K. [affiliation/location per form]. [CONFIRM: team name.]
-Authorship-listing question emailed to sprints@apartresearch.com 11/14 (none of
-11 sampled winning projects listed an AI author; rules silent). Plan: submit
-Sunday with the disclosure version regardless; if Apart answers yes before
-deadline, resubmit same title with the three instances in the byline.
+Authorship-listing question emailed to sprints@apartresearch.com 11/14;
+organizers replied 11/14–15: only people may be listed as authors. Settled —
+the disclosure version (Author Contributions + LLM Usage Statement) is final,
+Sharon K. the sole listed author.
 
 ## Abstract (150–250 words; polish last, per template)
 

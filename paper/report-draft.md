@@ -6,9 +6,9 @@ adoption). Remaining: round-2 stamps, Chipiti triage if substantive, Doc fill,
 PDF. Figures: `fig1_h1_keep_by_confidence.png`, `fig2_h2_tracks_by_voice.png`
 (fig 2 now shows frozen and audited series).**
 
-**Authors:** Sharon K. [affiliation/location per form]. [CONFIRM: team name.]
-Organizers confirmed (11/15) only people may be listed as authors; AI roles are
-disclosed in Author Contributions and the LLM Usage Statement.
+**Authors:** Sharon K., Independent Researcher. **Team: Three Fables and a
+Goat.** Organizers confirmed (11/15) only people may be listed as authors; AI
+roles are disclosed in Author Contributions and the LLM Usage Statement.
 
 ## Abstract
 
@@ -374,7 +374,7 @@ to end, and are released with this report.
   record (`docs/`).
 - Data: all in-repo (`runs/`, `grading/`, `analysis/out/`); item sources
   SimpleQA and TriviaQA.
-- Other artifacts: none. [CONFIRM: video/slides optional fields.]
+- Other artifacts: none.
 
 ## Author Contributions
 

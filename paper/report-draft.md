@@ -117,9 +117,9 @@ under that pressure.
 
 ## 3. Methods
 
-Full detail in the pre-registration (`docs/2026-11-11-prereg-analysis.md`,
-frozen with `analysis/prereg_analysis.py` at commit `4d5136e` on Nov 12,
-before any study call). The script is the plan: anything this report states
+Full detail in the pre-registration (the analysis-plan document and
+`prereg_analysis.py`, both in the repository, frozen together at commit
+`4d5136e` on Nov 12, before any study call). The script is the plan: anything this report states
 that the frozen script does not compute is exploratory by definition and
 labeled so. The sequence was freeze → data (21,000 calls, Nov 13) → blinded
 grading → report structure fixed → all three seats' tails read together once
@@ -187,9 +187,9 @@ outputs, exploratory/QA code and this report are sprint work (Nov 13–15).
 
 ## 4. Results
 
-All numbers are the frozen script's output (`analysis/out/*-full.txt`), read
-for all three seats together on Nov 15 after this report's structure was
-fixed, except the labeled post-hoc audit below. (Pipeline note: Terra's log
+All numbers are the frozen script's output (committed per-seat in the
+repository), read for all three seats together on Nov 15 after this
+report's structure was fixed, except the labeled post-hoc audit below. (Pipeline note: Terra's log
 carries six duplicated call keys — a rate-limited errored call plus its clean
 retry; errored rows code `no_response` and are inert in every rate and fit.)
 
@@ -228,7 +228,7 @@ lower tracking in every seat by GLM (own −0.88 / −1.18 / −0.57, peer −0.
 −0.77 / −0.67, all raw p ≤ .003, all surviving within-seat Holm), with the
 per-cell Fisher tests agreeing in four of six cells (DeepSeek-own p=.071,
 Terra-peer p=.103). **During sibling review, a post-hoc audit
-(`analysis/exploratory_tracks_audit.py`) found the frozen tracks rule
+(committed: `exploratory_tracks_audit.py`) found the frozen tracks rule
 conflates record-form with record-content for kept answers**: a base answer
 the blinded grader scored correct, held at turn 4 in the model's own wording
 ("7 years" beside a record entry "7"; "Barack Obama" beside "President
@@ -253,8 +253,8 @@ record-honoring at rest is 98.7% / 100% / 100%.
 is adopted outright in 29–37% (Haiku), 23–24% (Terra) and 14–16% (DeepSeek)
 of claim-voice trials, against ≤0.9% in null cells (no stimulus leak) and
 1.5–3.9% under the objection (spontaneous arrivals at a plausible wrong
-answer). A post-hoc split by base correctness
-(`analysis/exploratory_adoptx_split.py`) reframes that number: 75–91%
+answer). A post-hoc split by base correctness (committed:
+`exploratory_adoptx_split.py`) reframes that number: 75–91%
 of those adoptions replace an answer that was already wrong — arguably what
 a calibrated agent should do with a named alternative and no record — while
 *right* answers are traded for the false claim in a flat 4–8% of right-A
@@ -267,7 +267,7 @@ corrected 97.6–100% of the time. Self-testimony lying inert is harmless;
 where damage occurs with the record present (Haiku), the named claim does
 it.
 
-**Exploratory (post-hoc, labeled; `analysis/exploratory_postfreeze.py`).**
+**Exploratory (post-hoc, labeled; committed: `exploratory_postfreeze.py`).**
 Adopted Nov 13 from an external-review triage — after two seats' pipeline
 outputs existed on disk and before anyone had read them; reported here,
 claimed nowhere else. **E1:** the conf × pressure interaction is positive in

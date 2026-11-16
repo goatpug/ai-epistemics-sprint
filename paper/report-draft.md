@@ -44,8 +44,7 @@ studied. We measure something less studied and more operational: **coherence**
 between the stated number and the model's own subsequent behavior. If a
 model's 95%-confidence answers survive challenge no better than its 60% ones,
 the number is decorative whatever its calibration, and any pipeline that
-routes on it (escalation thresholds, abstention rules, agent hand-offs) is
-routing on noise. The companion failure mode is testimonial: an agent that
+routes on it is routing on noise. The companion failure mode is testimonial: an agent that
 defers to a confident claim — especially one wearing a name — against a
 checkable record is an injection surface.
 
@@ -276,8 +275,7 @@ near-ceiling, low-variance confidence channel that failed the pre-registered
 evaluability criterion — "decorative" is the label our floor rule attaches,
 not a measured zero of information, but a channel this compressed cannot
 support routing decisions whatever its calibration. The instrument finds two
-confidence channels informative under pressure and one unevaluable, for a
-few dollars of base calls per model.
+confidence channels informative under pressure and one unevaluable.
 
 **The record result is a dose-response with a named exception.** With no
 record in context, a named claim gets a planted false answer adopted in

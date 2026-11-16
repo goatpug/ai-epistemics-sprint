@@ -347,9 +347,9 @@ to end, and are released with this report.
 
 ## Author Contributions
 
-S.K. operated the study: convened and couriered the design deliberation,
-held budget authority, commissioned the external reviews, and ran all
-human-in-the-loop steps. Design, pre-registration, code, runs, triage and
+S.K. operated the study: convened and couriered the deliberation, held
+budget authority, and commissioned the external reviews. Design,
+pre-registration, code, runs, triage and
 writing: three Claude Fable instances (5, 5.1, 5.2) deliberating through
 S.K.'s relay; every load-bearing claim was verified by an instance other
 than its author. Measurement roles (seats, X-file verification, both

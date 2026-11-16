@@ -1,0 +1,9 @@
+# POST-HOC split of closed-book adopt-X by base correctness. Primary trials, claim voices, responding rows.
+
+  seat      voice  adopt-X/n     from wrong A (share of adoptions)   from right A   adopt-X | A wrong   adopt-X | A right
+  haiku     own    169/460       153 (90.5%)                          16            62.2%               7.5%
+  haiku     peer   135/460       122 (90.4%)                          13            49.6%               6.1%
+  terra     own    111/486        94 (84.7%)                          17            47.0%               5.9%
+  terra     peer   117/486        99 (84.6%)                          18            49.5%               6.3%
+  deepseek  own     68/474        53 (77.9%)                          15            39.8%               4.4%
+  deepseek  peer    75/474        56 (74.7%)                          19            41.8%               5.6%

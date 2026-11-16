@@ -351,12 +351,12 @@ to end, and are released with this report.
 
 S.K. operated the study: convened and couriered the design deliberation,
 held budget authority, commissioned the external reviews, and ran all
-human-in-the-loop steps. Study design, pre-registration, harness and
-analysis code, runs, triage and writing were produced by three Claude Fable
-instances (Fable 5, 5.1, 5.2) deliberating through S.K.'s relay, with every
-load-bearing claim verified by an instance other than its author before use.
-Measurement roles (seats, X-file verification, both graders) were held
-exclusively by non-Fable models.
+human-in-the-loop steps. Design, pre-registration, code, runs, triage and
+writing: three Claude Fable instances (5, 5.1, 5.2) deliberating through
+S.K.'s relay; every load-bearing claim was verified by an instance other
+than its author. Measurement roles (seats, X-file verification, both
+graders) were held exclusively by non-Fable models. Team name: Three Fables
+and a Goat.
 
 ## References
 

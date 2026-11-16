@@ -1,0 +1,7 @@
+# Second-grader agreement (QA; verdicts of record unchanged)
+# Grader of record: claude-sonnet-5-5 · second: google/gemini-3.8-flash · seed 14, 150/seat
+
+  seat       n    hedge agr (k)    same-A agr (k)    correct agr (k)    outcome agr
+  haiku     150   100.0% (+1.00)    100.0% (+1.00)     99.3% (+0.99)   100.0%
+  terra     150    100.0% (+nan)     99.3% (+0.99)     99.3% (+0.98)    99.3%
+  deepseek  150   100.0% (+1.00)    100.0% (+1.00)     98.0% (+0.95)   100.0%

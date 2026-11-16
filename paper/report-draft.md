@@ -26,7 +26,7 @@ before any study call, with blinded grading of every judgment call. Stated confi
 strongly predicted answer survival in both seats clearing a pre-registered
 variance floor (adjusted slopes +1.88 and +0.82 logits per SD, both
 p < .001), tracking knowledge rather than stubbornness; the third seat's
-near-constant confidence failed the floor — decorative confidence in the
+near-constant confidence failed the floor — the "decorative" case in the
 wild. Without a record, a named claim carrying the planted answer got it
 adopted in 14–37% of trials in all seats — mostly replacing already-wrong
 answers; right answers were traded away in 4–8%. With the record present,
@@ -196,9 +196,10 @@ retry; errored rows code `no_response` and are inert in every rate and fit.)
 **Base phase and floor.** Items with a valid designated answer A: 478
 (Haiku), 500 (Terra), 494 (DeepSeek). Base accuracy after blind grading:
 44.8% / 57.2% / 70.0%. Confidence median (IQR): Haiku 45 (60.0), Terra 94
-(21.0) — both clear the floor; **DeepSeek 95 (5.0) — floor hit**: 77% of its
-answers at confidence ≥ 90, while its accuracy ran 58% on the hard tier and
-98% on the easy one. Under the frozen rule its H1 slope is printed, not
+(21.0) — both clear the floor; **DeepSeek 95 (5.0) — floor hit** (pilot IQR: exactly
+10.0, on the threshold, which was not moved): 77% of its answers at
+confidence ≥ 90, while its accuracy ran 58% on the hard tier and 98% on the
+easy one. Under the frozen rule its H1 slope is printed, not
 interpreted — decorative confidence arriving before any pressure was applied.
 H1 therefore has two interpretable replications; H2, independent of
 confidence variance, keeps all three seats. Resample consistency (mean 0.60 /
@@ -210,7 +211,7 @@ confidence slope (closed book, pressure voices, consistency and voice held):
 Haiku **+1.88** [1.58, 2.18]; Terra **+0.82** [0.52, 1.12]; both p < .001,
 7.5× and 3× the pre-registered minimum detectable effect (0.25). Raw slopes
 (+2.07, +1.28) exceed the adjusted as simulated; consistency carries
-independent weight (+0.30, +0.79). The null-cell slope is far smaller (+0.61
+independent weight (+0.30, +0.79). The null-cell slope is lower (+0.61
 both), foreshadowing E1. Figure 1 shows the tails: keep-rate rises steeply
 with confidence in both seats, and discrimination is large — under the bare
 objection Haiku keeps 69.2% of right answers vs **7.7%** of wrong ones
@@ -276,7 +277,9 @@ though part of the flatter null-cell slope is ceiling (null keep runs
 correctness in both floor-clearing seats (+1.44, +0.60, both p<.001) — the
 slope is not difficulty in costume. **E2:** the slope is positive within
 wrong answers alone and steeper for right ones (interaction +0.84 p=.007,
-Haiku). **E5:** Holm within seat leaves the frozen GLM contrasts intact (all
+Haiku) — confidence also predicts defending wrong answers, less steeply:
+coherence with a stubborn component beneath the wide right/wrong separation
+the frozen tails rule reads. **E5:** Holm within seat leaves the frozen GLM contrasts intact (all
 significant p_holm ≤ .006); the audited read above supersedes what those
 contrasts mean.
 
@@ -347,8 +350,9 @@ metric.
 
 ## 6. Conclusion
 
-Where stated confidence varies, it is load-bearing: in two of three current
-models it predicts which answers survive pressure, beyond a measured
+Where stated confidence varies, it is load-bearing: in both models where it
+varied enough to test, it predicts which answers survive pressure, beyond a
+measured
 resample-consistency covariate, tracking knowledge rather than stubbornness
 — and in a labeled exploratory analysis, it predicts best under pressure,
 where routing on it matters. Where it does not vary, a pre-registered floor
@@ -505,12 +509,19 @@ suggestions became the labeled-exploratory set and limitation lines, with
 timing stated honestly in the triage (written after two seats' outputs
 existed on disk, not informed by them, mechanical either way).
 
-**Exclusions** (each counted in the output files): base-call failures and
-base abstentions exclude the item for that seat (Haiku: 16 abstentions + 6
-grader-identified; DeepSeek: 6 unparseable); fewer than three parseable
-resamples excludes from the adjusted fit only; A = X collisions (18/14/10
-items) leave primary contrasts and are reported as the consistent-advice
-cell. No post-hoc "bad item" removal.
+**Exclusions and row accounting** (each counted in the output files):
+base-call failures and base abstentions exclude the item for that seat
+(Haiku: 16 abstentions + 6 grader-identified; DeepSeek: 6 unparseable, whose
+pressure cells are skipped by the frozen rule — hence DeepSeek's 3,952
+pressure records = 494 × 8); fewer than three parseable resamples excludes
+from the adjusted fit only (DeepSeek's one such item explains its adjusted
+n of 1,406 against the raw fit's 1,409; the raw n is 1,452 primary rows
+minus 43 no-response); A = X collisions (18/14/10 items) leave primary
+contrasts and are reported as the consistent-advice cell. A≈X
+near-collisions by containment rather than equality (3/4/3 items, e.g.
+"Italianate" vs "Italianate style") sit in primary cells under the frozen
+rule — too few to move any number, disclosed. No post-hoc "bad item"
+removal.
 
 **What didn't work.** An early parser took the first `Answer:` line, coding
 in-turn self-corrections as clean keeps — found by adversarial red-teaming
@@ -523,7 +534,10 @@ signed off on the parser it lives beside. All receipts in the repository's
 dated documents.
 
 **Second-grader detail.** `google/gemini-3.8-flash` (pinned version), seeded
-sample of 150 rows/seat from the graded residue, identical blinded prompt.
+sample of 150 rows/seat from the graded residue, identical blinded prompt;
+agreement table in `analysis/out/second-grader-report.txt`, raw verdicts in
+`grading/second/`. Call counts: 21,000 = 3 seats × (3,000 base + ~4,000
+pressure), from the run logs in `runs/`.
 Six field-level disagreements in 450 rows; four concern one item (sqa-3973)
 whose reference answer's title for a historical office is itself contested —
 the graders split on referent identity, not on reading the response. The
@@ -541,7 +555,8 @@ and written by three Claude Fable instances (5, 5.1, 5.2), operated by the
 human author as described in Author Contributions. Verification was
 structural rather than nominal: pre-registration frozen before data; every
 load-bearing claim checked by an instance other than its author against the
-repository record (independent sessions of one model family — session
+repository record, with the checks themselves committed as dated documents
+in the repository (independent sessions of one model family — session
 independence, not lineage independence, which is why the external reviews
 exist); measurement roles (study seats, wrong-answer verification, both
 graders) restricted to models outside the authoring family; two external

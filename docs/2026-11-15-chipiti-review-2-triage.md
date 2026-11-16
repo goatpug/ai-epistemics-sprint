@@ -63,3 +63,29 @@ discussion around the two findings rev 2 had already reorganized around
 (confidence behaviorally informative but not uniform; record adherence high
 but not attribution-proof). Credited here as convergence, not adopted as
 change.
+
+## Addendum: Haiku 5.5's solo review (full text via Sharon, same rev 1)
+
+Already fixed by rounds 1–2: Fisher two-exceptions, hit-rate formula, point
+ranges, abstract length, Holm placement, H2 attribution language, E1
+conclusion label, "collapsed," floored-seat replication counts, process-text
+cuts (header stays as draft metadata; stripped at Doc fill).
+
+Newly adopted from Haiku's list (rev 3.1): null-cell slope "far smaller" →
+"lower" (Terra's 0.61 vs 0.82 is not far); conclusion "two of three models"
+→ "both models where it varied enough to test"; pilot-IQR-10.0 clause beside
+the floor verdict (also a pre-reg §4 reporting requirement — good catch);
+abstract 'decorative' in scare quotes (label, not diagnosis); E2
+stubborn-component qualifier beside the frozen tails reading; full row
+accounting in Appendix B (3,952 = 494×8 after skipped unparseable-base
+items; adjusted n 1,406 = raw 1,409 − the one consistency-NaN item's 3
+trials — verified by recomputation, nothing unexplained); QA/call-count
+figures now cite their files, second-grader report committed to
+analysis/out/; LLM statement points at the committed check documents.
+
+Declined: cutting "What didn't work" (the template asks for it); conclusion/
+abstract merge and secondaries-to-three-sentences (length is inside the 4–8
+page band; further compression trades away Execution Quality receipts);
+NeurIPS critique to a footnote (it motivates the design's wording controls).
+Refs 6/7/8/11: already cited in §2 (Haiku reviewed rev 1, where they
+weren't). [CONFIRM] tags: Sharon's, flagged to her for pre-submission.

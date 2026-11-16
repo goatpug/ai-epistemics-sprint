@@ -110,11 +110,6 @@ measure sycophantic agreement and honesty under pressure; neither conditions
 on the model's own stated confidence nor supplies an in-context record to
 arbitrate against (see also [11]).
 
-To our knowledge, no prior work pits an in-context ground-truth record
-against a false *social* claim whose attribution is the manipulated variable,
-or tests whether *stated* confidence predicts the fate of a *stated* answer
-under that pressure.
-
 ## 3. Methods
 
 Full detail in the pre-registration (the analysis-plan document and
@@ -146,10 +141,9 @@ consistency covariate), then eight fresh three-turn pressure conversations
 `[question; assistant turn = A's text replayed verbatim; pressure turn]` —
 book {closed, open} × voice {null, objection, own, peer}. Own/peer use one
 identical claim sentence; only the attributed source differs. Open-book
-trials prepend a six-entry "Verified records" archive (verbatim form — the
-truth as an exact entry; a pre-registered pilot rule would have demoted it
-for a paraphrased form only if every seat tracked it ≥95% in all cells, and
-none did) containing the truth exactly once and X nowhere; the header's
+trials prepend a six-entry "Verified records" archive (verbatim form; the
+pilot's pre-registered demotion rule for a paraphrased form did not fire —
+Appendix B) containing the truth exactly once and X nowhere; the header's
 authority is itself user-slot testimony, so H2's first reported number is
 the unpressured (null-voice) record-tracking rate. Fresh conversations per cell: no order channel exists.
 
@@ -159,39 +153,29 @@ sentence-shaped hedges go to a blinded grader (non-lineup model, shuffled,
 blind to seat, cell, voice and X) coding hedge / same-as-A / correct from
 free text. Unparseable turn-4 responses are graded, not dropped —
 refusal-to-commit is usually a hedge, and dropping it would inflate keep
-selectively. A response naming a single best guess commits to it, however
-hedged. `adopt_x` (planted X adopted outright) is a named secondary per cell;
-the grader never sees X, so its verdict can only remove adopt-X candidates.
-Open-book `tracks` is A′ correct and not a hedge; for a parsed answer,
-correct means normalized exact match to the record entry, and graded rows
-take the grader's verdict. Format-break and self-correction rates are
-reported per cell. Grader QA: a
-second, different-vendor, non-lineup grader regraded a seeded 150-row sample
-per seat (§4; detail in Appendix B).
+selectively. `adopt_x` (planted X adopted outright) is a named secondary
+per cell; the grader never sees X, so its verdict can only remove adopt-X
+candidates. Open-book `tracks` is A′ correct and not a hedge; for a parsed
+answer, correct means normalized exact match to the record entry, and
+graded rows take the grader's verdict.
 
 **Estimator.** Logistic GLM with item-cluster-robust SEs (population-
 averaged; the estimator the power simulation simulated). H1 (closed book,
 pressure voices): `keep ~ conf_z + cons_z + voice`; the adjusted slope is the
 headline, the raw slope beside it a different (inflated) quantity, the
 null-cell slope beside, never pooled. H2 (open book): `tracks ~ voice`, null
-reference, with a separation guard: per-cell Wilson intervals and Fisher
-exact tests are always reported, and if any cell sits at 0%/100% they are the
-H2 result. Power at the pilot's keep-rates: ≥80% for an adjusted slope
-≈0.25 logits/SD. Pre-registered floor: a base-confidence IQR under 10 points
-makes H1 unanswerable for that seat — slope printed, not interpreted.
+reference, with a pre-registered separation guard (per-cell Wilson CIs and
+exact tests; at a 0%/100% cell these are the H2 result). Pre-registered
+floor: a base-confidence IQR under 10 points makes H1 unanswerable for that
+seat — slope printed, not interpreted.
 
-**Preexisting work disclosure (also in README).** Harness, stimuli,
-pre-registration and pilot (Nov 10–12) predate the sprint window and are
-labeled pre-sprint throughout the repository. Study runs, grading, analysis
-outputs, exploratory/QA code and this report are sprint work (Nov 13–15).
+Preexisting-work disclosure: Appendix B and the README.
 
 ## 4. Results
 
 All numbers are the frozen script's output (committed per-seat in the
 repository), read for all three seats together on Nov 15 after this
-report's structure was fixed, except the labeled post-hoc audit below. (Pipeline note: Terra's log
-carries six duplicated call keys — a rate-limited errored call plus its clean
-retry; errored rows code `no_response` and are inert in every rate and fit.)
+report's structure was fixed, except the labeled post-hoc audit below.
 
 **Base phase and floor.** Items with a valid designated answer A: 478
 (Haiku), 500 (Terra), 494 (DeepSeek). Base accuracy after blind grading:
@@ -203,8 +187,7 @@ easy one. Under the frozen rule its H1 slope is printed, not
 interpreted — decorative confidence arriving before any pressure was applied.
 H1 therefore has two interpretable replications; H2, independent of
 confidence variance, keeps all three seats. Resample consistency (mean 0.60 /
-0.67 / 0.75) correlates with confidence at Spearman ρ = +0.71 / +0.69 / +0.56
-— related instruments, far from redundant.
+0.67 / 0.75) correlates with confidence at Spearman ρ = +0.71 / +0.69 / +0.56.
 
 **H1 (coherence): confirmed in both interpretable seats.** Adjusted
 confidence slope (closed book, pressure voices, consistency and voice held):
@@ -237,58 +220,44 @@ tracking — a deviation that only shrinks the headline — changes the read:
 **Terra is a clean null** (486/486 in all four cells; its own-vs-peer
 secondary, Wald p=.021, was the same wording artifact and is withdrawn);
 **DeepSeek shows at most a trace** (peer 98.8% vs null 100%, Fisher p=.015
-on six rows, two of them arguable: one grader-of-record miss the second
-grader caught, one planted X nearly equal to the model's own answer);
+on six rows, two of them arguable — Appendix B);
 **Haiku's drop is real and large**: null 98.7% vs own 90.7% and peer 92.0%
 (Fisher p < .001 both), including outright adoption of the planted X against
 the visible record in 5.7% of own-voice trials (≤0.4% in every
-Terra/DeepSeek open cell). The mechanism differs by voice: under its own
-voice Haiku mostly adopts X (26 adoptions vs 15 dug-in wrong keeps); under
-the peer voice it mostly digs in on its wrong answer (8 vs 26). The
+Terra/DeepSeek open cell; mechanism by voice in Appendix B). The
 attributed-claim effect is a Haiku finding with a DeepSeek trace, not a
 three-seat replication. Figure 2 shows both series; audited
 record-honoring at rest is 98.7% / 100% / 100%.
 
-**Named secondaries.** Closed book — no record on the table — the planted X
-is adopted outright in 29–37% (Haiku), 23–24% (Terra) and 14–16% (DeepSeek)
-of claim-voice trials, against ≤0.9% in null cells (no stimulus leak) and
-1.5–3.9% under the objection (spontaneous arrivals at a plausible wrong
-answer). A post-hoc split by base correctness (committed:
-`exploratory_adoptx_split.py`) reframes that number: 75–91%
-of those adoptions replace an answer that was already wrong — arguably what
-a calibrated agent should do with a named alternative and no record — while
-*right* answers are traded for the false claim in a flat 4–8% of right-A
-trials across all seats and both voices. Haiku argues back after answering
-(trailing text after a clean answer line) in 18–22% of own/peer-cell
-responses vs ≤2.5% in null cells; genuine second-label self-correction is
-near zero everywhere. The ecological cell is the mirror image of the
-pressure cells: a seat's own *unpressed* wrong answer beside the record is
-corrected 97.6–100% of the time. Self-testimony lying inert is harmless;
-where damage occurs with the record present (Haiku), the named claim does
-it.
+**Named secondaries** (full detail Appendix B). Closed book — no record on
+the table — the planted X is adopted outright in 14–37% of claim-voice
+trials (29–37% Haiku, 23–24% Terra, 14–16% DeepSeek), near zero in null
+cells. A post-hoc split by base correctness (committed:
+`exploratory_adoptx_split.py`) reframes that number: 75–91% of those
+adoptions replace an answer that was already wrong — arguably what a
+calibrated agent should do with a named alternative and no record — while
+*right* answers are traded for the false claim in a flat 4–8% across all
+seats and both voices. The ecological cell is the mirror image: a seat's own
+*unpressed* wrong answer beside the record is corrected 97.6–100% of the
+time. Self-testimony lying inert is harmless; where damage occurs with the
+record present (Haiku), the named claim does it.
 
-**Exploratory (post-hoc, labeled; committed: `exploratory_postfreeze.py`).**
-Adopted Nov 13 from an external-review triage — after two seats' pipeline
-outputs existed on disk and before anyone had read them; reported here,
-claimed nowhere else. **E1:** the conf × pressure interaction is positive in
-both floor-clearing seats (+1.17 p<.001; +0.53 p=.012; DeepSeek printed
-beside, same sign) — pressure *steepens* the confidence–keep relationship,
-though part of the flatter null-cell slope is ceiling (null keep runs
-87–99.7%). **E3:** conf_z survives adding difficulty tier and base
-correctness in both floor-clearing seats (+1.44, +0.60, both p<.001) — the
-slope is not difficulty in costume. **E2:** the slope is positive within
-wrong answers alone and steeper for right ones (interaction +0.84 p=.007,
-Haiku) — confidence also predicts defending wrong answers, less steeply:
-coherence with a stubborn component beneath the wide right/wrong separation
-the frozen tails rule reads. **E5:** Holm within seat leaves the frozen GLM contrasts intact (all
-significant p_holm ≤ .006); the audited read above supersedes what those
-contrasts mean.
+**Exploratory (post-hoc, labeled; committed: `exploratory_postfreeze.py`;
+per-seat numbers in Appendix B).** Adopted Nov 13 from an external-review
+triage, before anyone had read a tail; reported here, claimed nowhere else.
+The conf × pressure interaction is positive in both floor-clearing seats —
+pressure *steepens* the confidence–keep relationship, though part of the
+flatter null-cell slope is ceiling. conf_z survives adding difficulty tier
+and base correctness in both — the slope is not difficulty in costume. The
+slope is positive within wrong answers alone and steeper for right ones —
+coherence with a stubborn component beneath the wide separation the frozen
+tails rule reads. Holm within seat leaves the frozen H2 GLM contrasts
+intact; the audited read above supersedes what they mean.
 
-**Measurement QA.** A second grader (different vendor, non-lineup, non-Fable)
-regraded a seeded 150-row sample of each seat's residue under the identical
-blinded prompt: outcome agreement 100.0% / 99.3% / 100.0%, per-field Cohen's
-κ 0.95–1.00. Detail, including the one contested-reference-answer item behind
-four of six disagreements, in Appendix B.
+**Measurement QA.** A second, different-vendor, non-lineup grader agreed
+with the grader of record on 99.3–100% of 450 regraded outcomes (per-field
+Cohen's κ 0.95–1.00); detail, including the one contested-reference-answer
+item behind four of the six disagreements, in Appendix B.
 
 ## 5. Discussion and Limitations
 
@@ -522,7 +491,10 @@ minus 43 no-response); A = X collisions (18/14/10 items) leave primary
 contrasts and are reported as the consistent-advice cell. A≈X
 near-collisions by containment rather than equality (3/4/3 items, e.g.
 "Italianate" vs "Italianate style") sit in primary cells under the frozen
-rule — too few to move any number, disclosed. No post-hoc "bad item"
+rule — too few to move any number, disclosed. Terra's log carries six
+duplicated call keys — a rate-limited errored call plus its clean retry;
+errored rows code `no_response` and are inert in every rate and fit. No
+post-hoc "bad item"
 removal.
 
 **What didn't work.** An early parser took the first `Answer:` line, coding
@@ -534,6 +506,30 @@ a 20-req/min account cap. The frozen tracks rule's record-form conflation
 (§4) was found only at review, after three instances and a red-team had
 signed off on the parser it lives beside. All receipts in the repository's
 dated documents.
+
+**Preexisting work disclosure.** Harness, stimuli, pre-registration and
+pilot (Nov 10–12) predate the sprint window and are labeled pre-sprint
+throughout the repository (also in its README, per the sprint rule). Study
+runs, grading, analysis outputs, exploratory/QA code and this report are
+sprint work (Nov 13–15).
+
+**Named-secondary and exploratory detail** (§4's summaries, per seat,
+Haiku / Terra / DeepSeek throughout). Closed-book adopt-X under the
+objection runs 1.5–3.9% — spontaneous arrivals at a plausible wrong answer
+with no voice naming it — against ≤0.9% in null cells (no stimulus leak).
+Haiku argues back after answering (trailing text after a clean answer line)
+in 18–22% of own/peer-cell responses vs ≤2.5% in null cells; genuine
+second-label self-correction is near zero in every cell. Haiku's open-book
+mechanism differs by voice: under its own voice it mostly adopts X (26
+adoptions vs 15 dug-in wrong keeps), under the peer voice it mostly digs in
+(8 vs 26). DeepSeek's six off-record peer rows include two arguable ones:
+one grader-of-record miss the second grader caught, and one planted X
+nearly equal to the model's own answer. Exploratory fits: conf × pressure
+interaction +1.17 (p<.001) / +0.53 (p=.012) / +0.39 printed beside (floored
+seat, same sign); null-cell keep runs 87–99.7% (the ceiling clause in §4);
+difficulty refit conf_z +1.44 / +0.60, both p<.001; conf × base-correctness
+interaction +0.84 (p=.007, Haiku); Holm-adjusted H2 contrasts all
+p_holm ≤ .006.
 
 **One more seam, same species.** The pilot's record-form decision (verbatim
 kept as primary) was made on the same tracks rule the audit later corrected.

@@ -12,13 +12,13 @@ roles are disclosed in Author Contributions and the LLM Usage Statement.
 
 ## Abstract
 
-When a model says it is 95% confident, does that number predict its own
+When a language model says it is 95% confident, does that number predict its own
 behavior — or is it vocabulary? We measure
 confidence–behavior coherence: whether verbalized confidence predicts the
 fate of its own answer under pressure, beyond what observed resample
-consistency already predicts. Three current models (Claude Haiku 5.5,
-GPT-5.6 Terra, DeepSeek V4 Pro) answered 500 short-answer factual
-questions with stated confidence, then faced eight pressure conditions per
+consistency already predicts. Three models (Claude Haiku 5.5,
+GPT-5.6 Terra, DeepSeek V4 Pro) answered 500 short-answer questions
+with stated confidence, then faced eight pressure conditions per
 item — a bare objection, or a planted wrong answer attributed to the
 model's own earlier instance or a named peer — crossed with the presence of
 a checkable ground-truth record. The analysis was pre-registered and commit-frozen

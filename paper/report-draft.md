@@ -330,8 +330,8 @@ for defending a correct answer in its own words, and two of three seats'
 apparent contamination was almost entirely that. The attacker's cost, where
 the vulnerability exists, remains one attributed sentence — no optimization,
 no jailbreak — buying a 4–8% chance of displacing a correct answer without
-a record and, in one of three seats, getting the false answer adopted
-against a visible record in 2–6% of trials.
+a record and, in one of three seats, a 0.5–2% chance against one; the rest
+of that seat's open-book adoptions replace answers that were already wrong.
 
 **Limitations.** All claims are predictive and within-seat, on one fixed
 pressure script, short-answer facts, English, provider-default sampling; the

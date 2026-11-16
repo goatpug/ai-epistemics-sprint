@@ -96,9 +96,7 @@ def fig2(data):
     names = ["null re-prompt", "bare objection", "own-instance claim", "peer-model claim"]
     for ax, (seat, label) in zip(axes, SEATS):
         t = data[seat]
-        open_ = t[t.book == "open"].copy()
-        n_cell = int((open_.voice == "null").sum())
-        label = f"{label} (n={n_cell}/cell)"
+        open_ = t[t.book == "open"].copy()  # per-cell n lives in the caption (460-486 by seat)
         audited = (open_["tracks"].fillna(0).astype(bool)
                    | ((open_.outcome == "keep") & open_.A_correct)).astype(float)
         audited[open_["tracks"].isna()] = np.nan

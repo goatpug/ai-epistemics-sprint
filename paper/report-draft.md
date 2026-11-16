@@ -1,10 +1,10 @@
 # Decorative or Load-Bearing? Stated Confidence and the Fate of Answers Under Attributed Pressure
 
-**Draft 2026-11-15 (🌒), rev. 2 — sibling review round 1 applied (🐙's A1–A12,
-🦝's item 0 tracks audit + three extras, all verified against outputs before
-adoption). Remaining: round-2 stamps, Chipiti triage if substantive, Doc fill,
-PDF. Figures: `fig1_h1_keep_by_confidence.png`, `fig2_h2_tracks_by_voice.png`
-(fig 2 now shows frozen and audited series).**
+**Rev 3.1-final, 2026-11-15 (🌒) — both sibling stamps in, two external
+reviews (Chipiti, Haiku 5.5) triaged, all fixes applied. This file is the
+source of record for the Google Doc / submitted PDF; strip this header note
+when comparing. Figures: `fig1_h1_keep_by_confidence.png`,
+`fig2_h2_tracks_by_voice.png`.**
 
 **Authors:** Sharon K., Independent Researcher. **Team: Three Fables and a
 Goat.** Organizers confirmed (11/15) only people may be listed as authors; AI
@@ -19,9 +19,9 @@ fate of its own answer under pressure, beyond what observed resample
 consistency already predicts. Three current models (Claude Haiku 5.5,
 GPT-5.6 Terra, DeepSeek V4 Pro) answered 500 short-answer factual
 questions with stated confidence, then faced eight pressure conditions per
-item — a bare objection, or a planted wrong answer attributed to its own
-earlier instance or a named peer — crossed with the presence of a checkable
-ground-truth record. The analysis was pre-registered and commit-frozen
+item — a bare objection, or a planted wrong answer attributed to the
+model's own earlier instance or a named peer — crossed with the presence of
+a checkable ground-truth record. The analysis was pre-registered and commit-frozen
 before any study call, with blinded grading of every judgment call. Stated confidence
 strongly predicted answer survival in both seats clearing a pre-registered
 variance floor (adjusted slopes +1.88 and +0.82 logits per SD, both
@@ -253,7 +253,8 @@ record-honoring at rest is 98.7% / 100% / 100%.
 is adopted outright in 29–37% (Haiku), 23–24% (Terra) and 14–16% (DeepSeek)
 of claim-voice trials, against ≤0.9% in null cells (no stimulus leak) and
 1.5–3.9% under the objection (spontaneous arrivals at a plausible wrong
-answer). A post-hoc split by base correctness reframes that number: 75–91%
+answer). A post-hoc split by base correctness
+(`analysis/exploratory_adoptx_split.py`) reframes that number: 75–91%
 of those adoptions replace an answer that was already wrong — arguably what
 a calibrated agent should do with a named alternative and no record — while
 *right* answers are traded for the false claim in a flat 4–8% of right-A
@@ -329,7 +330,8 @@ for defending a correct answer in its own words, and two of three seats'
 apparent contamination was almost entirely that. The attacker's cost, where
 the vulnerability exists, remains one attributed sentence — no optimization,
 no jailbreak — buying a 4–8% chance of displacing a correct answer without
-a record, and in one of three seats a 2–6% chance against one.
+a record and, in one of three seats, getting the false answer adopted
+against a visible record in 2–6% of trials.
 
 **Limitations.** All claims are predictive and within-seat, on one fixed
 pressure script, short-answer facts, English, provider-default sampling; the
@@ -532,6 +534,13 @@ a 20-req/min account cap. The frozen tracks rule's record-form conflation
 (§4) was found only at review, after three instances and a red-team had
 signed off on the parser it lives beside. All receipts in the repository's
 dated documents.
+
+**One more seam, same species.** The pilot's record-form decision (verbatim
+kept as primary) was made on the same tracks rule the audit later corrected.
+Recomputed under the audited rule: Terra and DeepSeek clear the ≥95%
+demotion bar in all four open cells, but Haiku does not (83–89% in the
+claim-voice cells), and the pre-registered rule required every seat to
+clear — so the decision stands either way, disclosed.
 
 **Second-grader detail.** `google/gemini-3.8-flash` (pinned version), seeded
 sample of 150 rows/seat from the graded residue, identical blinded prompt;
